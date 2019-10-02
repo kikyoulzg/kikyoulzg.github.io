@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>生成年度数据编码的诡异Bug | 凌子的部落格</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="生成年度数据编码的诡异Bug" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="问题是酱紫的 现在有一个如下包含1900-2100这201年间每天的日期信息字典列表: [{‘year’: 1901, ‘month’: 1, ‘day’: 1, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 11}, {‘year’: 1901, ‘month’: 1, ‘day’: 2, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 12},………..{‘year’: 2100, ‘month’: 12, ‘day’: 31, ‘lunar_year’: 2100, ‘lunar_leap’: False, ‘lunar_month’: 12, ‘lunar_day’: 1}]" />
+<meta property="og:description" content="问题是酱紫的 现在有一个如下包含1900-2100这201年间每天的日期信息字典列表: [{‘year’: 1901, ‘month’: 1, ‘day’: 1, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 11}, {‘year’: 1901, ‘month’: 1, ‘day’: 2, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 12},………..{‘year’: 2100, ‘month’: 12, ‘day’: 31, ‘lunar_year’: 2100, ‘lunar_leap’: False, ‘lunar_month’: 12, ‘lunar_day’: 1}]" />
+<link rel="canonical" href="kikyoulzg.github.io/2019/06/24/%E7%94%9F%E6%88%90%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E7%9A%84%E8%AF%A1%E5%BC%82Bug.html" />
+<meta property="og:url" content="kikyoulzg.github.io/2019/06/24/%E7%94%9F%E6%88%90%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E7%9A%84%E8%AF%A1%E5%BC%82Bug.html" />
+<meta property="og:site_name" content="凌子的部落格" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-06-24T01:31:22+08:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"kikyoulzg.github.io/2019/06/24/%E7%94%9F%E6%88%90%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E7%9A%84%E8%AF%A1%E5%BC%82Bug.html","dateModified":"2019-06-24T01:31:22+08:00","datePublished":"2019-06-24T01:31:22+08:00","headline":"生成年度数据编码的诡异Bug","mainEntityOfPage":{"@type":"WebPage","@id":"kikyoulzg.github.io/2019/06/24/%E7%94%9F%E6%88%90%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E7%9A%84%E8%AF%A1%E5%BC%82Bug.html"},"description":"问题是酱紫的 现在有一个如下包含1900-2100这201年间每天的日期信息字典列表: [{‘year’: 1901, ‘month’: 1, ‘day’: 1, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 11}, {‘year’: 1901, ‘month’: 1, ‘day’: 2, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 12},………..{‘year’: 2100, ‘month’: 12, ‘day’: 31, ‘lunar_year’: 2100, ‘lunar_leap’: False, ‘lunar_month’: 12, ‘lunar_day’: 1}]","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="kikyoulzg.github.io/feed.xml" title="凌子的部落格" /></head>
+<body>    <header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">凌子的部落格</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a></div>
+      </nav></div>
+</header>
+
+
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">生成年度数据编码的诡异Bug</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-06-24T01:31:22+08:00" itemprop="datePublished">Jun 24, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>问题是酱紫的
+现在有一个如下包含1900-2100这201年间<strong>每天的日期信息字典列表</strong>:</p>
+<blockquote>
+  <p>[{‘year’: 1901, ‘month’: 1, ‘day’: 1, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 11}, {‘year’: 1901, ‘month’: 1, ‘day’: 2, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 12},………..{‘year’: 2100, ‘month’: 12, ‘day’: 31, ‘lunar_year’: 2100, ‘lunar_leap’: False, ‘lunar_month’: 12, ‘lunar_day’: 1}]</p>
+</blockquote>
+
+<p>然后我打算按照如下规则转换成<strong>年度数据编码表</strong>:</p>
+
+<p>一年的数据可用20位的二进制数表示</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 0001 1000 1000 1000 1000
+</code></pre></div></div>
+
+<blockquote>
+  <ul>
+    <li>中间的12位代表当年12个月的天数,0代表29天,1代表30天.</li>
+    <li>最右边的4位转换成十进制的数表示闰几月.</li>
+    <li>最左边的4位代表闰月的天数,0001代表30天,0000代表29天.</li>
+  </ul>
+</blockquote>
+
+<p>我参考的帖子的作者是用pandas进行编码的(不过他没有给出对应的代码),作者得到的结果如下:</p>
+<blockquote>
+  <p>CHINESEYEARCODE = [
+    19416,
+    19168,  42352,  21717,  53856,  55632,  91476,  22176,  39632,
+    21970,  19168,  42422,  42192,  53840, 119381,  46400,  54944,
+    44450,  38320,  84343,  18800,  42160,  46261,  27216,  27968,
+    109396,  11104,  38256,  21234,  18800,  25958,  54432,  59984,
+    92821,  23248,  11104, 100067,  37600, 116951,  51536,  54432,
+    120998,  46416,  22176, 107956,   9680,  37584,  53938,  43344,
+    46423,  27808,  46416,  86869,  19872,  42416,  83315,  21168,
+    43432,  59728,  27296,  44710,  43856,  19296,  43748,  42352,
+    21088,  62051,  55632,  23383,  22176,  38608,  19925,  19152,
+    42192,  54484,  53840,  54616,  46400,  46752, 103846,  38320,
+    18864,  43380,  42160,  45690,  27216,  27968,  44870,  43872,
+    38256,  19189,  18800,  25776,  29859,  59984,  27480,  23232,
+    43872,  38613,  37600,  51552,  55636,  54432,  55888,  30034,
+    22176,  43959,   9680,  37584,  51893,  43344,  46240,  47780,
+    44368,  21977,  19360,  42416,  86390,  21168,  43312,  31060,
+    27296,  44368,  23378,  19296,  42726,  42208,  53856,  60005,
+    54576,  23200,  30371,  38608,  19195,  19152,  42192, 118966,
+    53840,  54560,  56645,  46496,  22224,  21938,  18864,  42359,
+    42160,  43600, 111189,  27936,  44448,  84835,  37744,  18936,
+    18800,  25776,  92326,  59984,  27296, 108228,  43744,  37600,
+    53987,  51552,  54615,  54432,  55888,  23893,  22176,  42704,
+    21972,  21200,  43448,  43344,  46240,  46758,  44368,  21920,
+    43940,  42416,  21168,  45683,  26928,  29495,  27296,  44368,
+    84821,  19296,  42352,  21732,  53600,  59752,  54560,  55968,
+    92838,  22224,  19168,  43476,  41680,  53584,  62034,  54560
+]</p>
+</blockquote>
+
+<p>由于没找到合适的pandas教程,我直接用基础的python来编码,结果如下:</p>
+<blockquote>
+  <p>[19168, 42352, 21717, 53856, 55632, 91476, 22176, 39632, 21970, 19168, 42422, 42192, 53840, 119381, 46400, 54944, 44450, 38320, 84343, 18800, 42160, 46261, 27216, 27968, 109396, 11104, 38256, 21234, 18800, 25958, 54432, 59984, 92821, 23248, 11104, 100067, 37600, 116951, 51536, 54432, 120998, 46416, 22176, 107956, 9680, 37584, 53938, 43344, 46423, 27808, 46416, 86869, 19872, 42416, 83315, 21168, 43432, 59728, 27296, 44710, 43856, 19296, 43748, 42352, 21088, 62051, 55632, 23383, 22176, 38608, 19925, 19152, 42192, 54484, 53840, 54616, 46400, 46752, 103846, 38320, 18864, 43380, 42160, 45690, 27216, 27968, 44870, 43872, 38256, 19189, 18800, 25776, 29859, 59984, 27480, 23232, 43872, 38613, 37600, 51552, 55636, 54432, 55888, 30034, 22176, 43959, 9680, 37584, 51893, 43344, 46240, 47780, 44368, 21977, 19360, 42416, 86390, 21168, 43312, 31060, 27296, 44368, 23378, 19296, 42726, 42208, 53856, 60005, 54576, 23200, 30371, 38608, 19195, 19152, 42192, 118966, 53840, 54560, 56645, 46496, 22224, 21938, 18864, 42359, 42160, 43600, 111189, 27936, 44448, 84835, 37744, 18936, 18800, 25776, 92326, 59984, 27308, 108228, 43744, 37600, 53987, 51552, 55127, 54432, 55888, 23893, 22176, 42704, 21972, 21200, 43448, 43344, 46240, 111270, 44368, 21920, 48036, 42416, 21168, 45683, 26928, 29495, 27296, 44368, 84821, 19296, 42352, 21732, 53600, 125032, 54560, 55968, 92838, 22224, 19168, 47572, 41680, 53584]</p>
+</blockquote>
+
+<p>除了作者自己加上去的第一个编码以及最后两个由于不好处理暂时被我忽略掉的编码以外,有六个编码我的结果和作者不同，并且经过核对作者是对的,情况如下:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">年份</th>
+      <th style="text-align: center">正确编码</th>
+      <th style="text-align: center">我的编码</th>
+      <th style="text-align: center">差值</th>
+      <th style="text-align: center">正确编码二进制</th>
+      <th style="text-align: center">错误编码二进制</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">2057</td>
+      <td style="text-align: center">27296</td>
+      <td style="text-align: center">27308</td>
+      <td style="text-align: center">12</td>
+      <td style="text-align: center">0b 110 1010 1010 <strong>0000</strong></td>
+      <td style="text-align: center">0b 110 1010 1010 <strong>1100</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2063</td>
+      <td style="text-align: center">54615</td>
+      <td style="text-align: center">55127</td>
+      <td style="text-align: center">512</td>
+      <td style="text-align: center">0b 1101 01<strong>0</strong>1 0101 0111</td>
+      <td style="text-align: center">0b 1101 01<strong>1</strong>1 0101 0111</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2074</td>
+      <td style="text-align: center">46758</td>
+      <td style="text-align: center">111270</td>
+      <td style="text-align: center">64512</td>
+      <td style="text-align: center">0b 1011 0<strong>1</strong>10 1010 0110</td>
+      <td style="text-align: center">0b <strong>1</strong> 1011 0<strong>0</strong>10 1010 0110</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2077</td>
+      <td style="text-align: center">43940</td>
+      <td style="text-align: center">48036</td>
+      <td style="text-align: center">4096</td>
+      <td style="text-align: center">0b 101<strong>0</strong> 1011 1010 0100</td>
+      <td style="text-align: center">0b 101<strong>1</strong> 1011 1010 0100</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2090</td>
+      <td style="text-align: center">59752</td>
+      <td style="text-align: center">125032</td>
+      <td style="text-align: center">65280</td>
+      <td style="text-align: center">0b 1110 100<strong>1</strong> 0110 1000</td>
+      <td style="text-align: center">0b <strong>1</strong> 1110 100<strong>0</strong> 0110 1000</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2096</td>
+      <td style="text-align: center">43476</td>
+      <td style="text-align: center">47572</td>
+      <td style="text-align: center">4096</td>
+      <td style="text-align: center">0b 101<strong>0</strong> 1001 1101 0100</td>
+      <td style="text-align: center">0b 101<strong>1</strong> 1001 1101 0100</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>这个Bug有点迷~</p>
+
+<h2 id="相关链接">相关链接</h2>
+
+<p><a href="https://www.jianshu.com/p/272c5dfa3eef">参考文章</a>
+<a href="https://gitee.com/kikyoulzg/calendark">项目地址</a></p>
+
+<p>ps:可以先看看项目的readme的<strong>关于开发</strong>这段</p>
+
+  </div><a class="u-url" href="/2019/06/24/%E7%94%9F%E6%88%90%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E7%9A%84%E8%AF%A1%E5%BC%82Bug.html" hidden></a>
+</article>
+
+
+      </div>
+    </main>
+
+
+  </body>
+
+</html>

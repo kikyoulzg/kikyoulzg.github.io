@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="kikyoulzg.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="kikyoulzg.github.io/" rel="alternate" type="text/html" /><updated>2019-10-01T00:41:01+08:00</updated><id>kikyoulzg.github.io/feed.xml</id><title type="html">凌子的部落格</title><entry><title type="html">魔都记忆</title><link href="kikyoulzg.github.io/2019/09/28/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86.html" rel="alternate" type="text/html" title="魔都记忆" /><published>2019-09-28T01:24:43+08:00</published><updated>2019-09-28T01:24:43+08:00</updated><id>kikyoulzg.github.io/2019/09/28/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86</id><content type="html" xml:base="kikyoulzg.github.io/2019/09/28/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86.html">&lt;h2 id=&quot;在上海&quot;&gt;在上海&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="kikyoulzg.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="kikyoulzg.github.io/" rel="alternate" type="text/html" /><updated>2019-10-02T19:58:09+08:00</updated><id>kikyoulzg.github.io/feed.xml</id><title type="html">凌子的部落格</title><entry><title type="html">魔都记忆</title><link href="kikyoulzg.github.io/2019/09/28/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86.html" rel="alternate" type="text/html" title="魔都记忆" /><published>2019-09-28T01:24:43+08:00</published><updated>2019-09-28T01:24:43+08:00</updated><id>kikyoulzg.github.io/2019/09/28/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86</id><content type="html" xml:base="kikyoulzg.github.io/2019/09/28/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86.html">&lt;h2 id=&quot;在上海&quot;&gt;在上海&lt;/h2&gt;
 &lt;p&gt;昔日，胡适写了本书叫“四十自述·在上海”，如今我也来到了上海，虽不敢自比胡适先生，但也不妨写点什么以便他日回忆品味。（其实就是无聊写点东西打发打发时间啦）&lt;/p&gt;
 
 &lt;h2 id=&quot;浦东&quot;&gt;浦东&lt;/h2&gt;
@@ -65,4 +65,438 @@
 
 &lt;p&gt;&lt;img src=&quot;/downloads/fgo3.jpg&quot; alt=&quot;fes&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/downloads/fgo4.jpg&quot; alt=&quot;fes&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">在上海 昔日，胡适写了本书叫“四十自述·在上海”，如今我也来到了上海，虽不敢自比胡适先生，但也不妨写点什么以便他日回忆品味。（其实就是无聊写点东西打发打发时间啦）</summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;/downloads/fgo4.jpg&quot; alt=&quot;fes&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">在上海 昔日，胡适写了本书叫“四十自述·在上海”，如今我也来到了上海，虽不敢自比胡适先生，但也不妨写点什么以便他日回忆品味。（其实就是无聊写点东西打发打发时间啦）</summary></entry><entry><title type="html">生成年度数据编码的诡异Bug</title><link href="kikyoulzg.github.io/2019/06/24/%E7%94%9F%E6%88%90%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E7%9A%84%E8%AF%A1%E5%BC%82Bug.html" rel="alternate" type="text/html" title="生成年度数据编码的诡异Bug" /><published>2019-06-24T01:31:22+08:00</published><updated>2019-06-24T01:31:22+08:00</updated><id>kikyoulzg.github.io/2019/06/24/%E7%94%9F%E6%88%90%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E7%9A%84%E8%AF%A1%E5%BC%82Bug</id><content type="html" xml:base="kikyoulzg.github.io/2019/06/24/%E7%94%9F%E6%88%90%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E7%9A%84%E8%AF%A1%E5%BC%82Bug.html">&lt;p&gt;问题是酱紫的
+现在有一个如下包含1900-2100这201年间&lt;strong&gt;每天的日期信息字典列表&lt;/strong&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;[{‘year’: 1901, ‘month’: 1, ‘day’: 1, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 11}, {‘year’: 1901, ‘month’: 1, ‘day’: 2, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 12},………..{‘year’: 2100, ‘month’: 12, ‘day’: 31, ‘lunar_year’: 2100, ‘lunar_leap’: False, ‘lunar_month’: 12, ‘lunar_day’: 1}]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;然后我打算按照如下规则转换成&lt;strong&gt;年度数据编码表&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;一年的数据可用20位的二进制数表示&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 0001 1000 1000 1000 1000
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;中间的12位代表当年12个月的天数,0代表29天,1代表30天.&lt;/li&gt;
+    &lt;li&gt;最右边的4位转换成十进制的数表示闰几月.&lt;/li&gt;
+    &lt;li&gt;最左边的4位代表闰月的天数,0001代表30天,0000代表29天.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我参考的帖子的作者是用pandas进行编码的(不过他没有给出对应的代码),作者得到的结果如下:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;CHINESEYEARCODE = [
+    19416,
+    19168,  42352,  21717,  53856,  55632,  91476,  22176,  39632,
+    21970,  19168,  42422,  42192,  53840, 119381,  46400,  54944,
+    44450,  38320,  84343,  18800,  42160,  46261,  27216,  27968,
+    109396,  11104,  38256,  21234,  18800,  25958,  54432,  59984,
+    92821,  23248,  11104, 100067,  37600, 116951,  51536,  54432,
+    120998,  46416,  22176, 107956,   9680,  37584,  53938,  43344,
+    46423,  27808,  46416,  86869,  19872,  42416,  83315,  21168,
+    43432,  59728,  27296,  44710,  43856,  19296,  43748,  42352,
+    21088,  62051,  55632,  23383,  22176,  38608,  19925,  19152,
+    42192,  54484,  53840,  54616,  46400,  46752, 103846,  38320,
+    18864,  43380,  42160,  45690,  27216,  27968,  44870,  43872,
+    38256,  19189,  18800,  25776,  29859,  59984,  27480,  23232,
+    43872,  38613,  37600,  51552,  55636,  54432,  55888,  30034,
+    22176,  43959,   9680,  37584,  51893,  43344,  46240,  47780,
+    44368,  21977,  19360,  42416,  86390,  21168,  43312,  31060,
+    27296,  44368,  23378,  19296,  42726,  42208,  53856,  60005,
+    54576,  23200,  30371,  38608,  19195,  19152,  42192, 118966,
+    53840,  54560,  56645,  46496,  22224,  21938,  18864,  42359,
+    42160,  43600, 111189,  27936,  44448,  84835,  37744,  18936,
+    18800,  25776,  92326,  59984,  27296, 108228,  43744,  37600,
+    53987,  51552,  54615,  54432,  55888,  23893,  22176,  42704,
+    21972,  21200,  43448,  43344,  46240,  46758,  44368,  21920,
+    43940,  42416,  21168,  45683,  26928,  29495,  27296,  44368,
+    84821,  19296,  42352,  21732,  53600,  59752,  54560,  55968,
+    92838,  22224,  19168,  43476,  41680,  53584,  62034,  54560
+]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;由于没找到合适的pandas教程,我直接用基础的python来编码,结果如下:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;[19168, 42352, 21717, 53856, 55632, 91476, 22176, 39632, 21970, 19168, 42422, 42192, 53840, 119381, 46400, 54944, 44450, 38320, 84343, 18800, 42160, 46261, 27216, 27968, 109396, 11104, 38256, 21234, 18800, 25958, 54432, 59984, 92821, 23248, 11104, 100067, 37600, 116951, 51536, 54432, 120998, 46416, 22176, 107956, 9680, 37584, 53938, 43344, 46423, 27808, 46416, 86869, 19872, 42416, 83315, 21168, 43432, 59728, 27296, 44710, 43856, 19296, 43748, 42352, 21088, 62051, 55632, 23383, 22176, 38608, 19925, 19152, 42192, 54484, 53840, 54616, 46400, 46752, 103846, 38320, 18864, 43380, 42160, 45690, 27216, 27968, 44870, 43872, 38256, 19189, 18800, 25776, 29859, 59984, 27480, 23232, 43872, 38613, 37600, 51552, 55636, 54432, 55888, 30034, 22176, 43959, 9680, 37584, 51893, 43344, 46240, 47780, 44368, 21977, 19360, 42416, 86390, 21168, 43312, 31060, 27296, 44368, 23378, 19296, 42726, 42208, 53856, 60005, 54576, 23200, 30371, 38608, 19195, 19152, 42192, 118966, 53840, 54560, 56645, 46496, 22224, 21938, 18864, 42359, 42160, 43600, 111189, 27936, 44448, 84835, 37744, 18936, 18800, 25776, 92326, 59984, 27308, 108228, 43744, 37600, 53987, 51552, 55127, 54432, 55888, 23893, 22176, 42704, 21972, 21200, 43448, 43344, 46240, 111270, 44368, 21920, 48036, 42416, 21168, 45683, 26928, 29495, 27296, 44368, 84821, 19296, 42352, 21732, 53600, 125032, 54560, 55968, 92838, 22224, 19168, 47572, 41680, 53584]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;除了作者自己加上去的第一个编码以及最后两个由于不好处理暂时被我忽略掉的编码以外,有六个编码我的结果和作者不同，并且经过核对作者是对的,情况如下:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;年份&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;正确编码&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;我的编码&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;差值&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;正确编码二进制&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;错误编码二进制&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2057&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;27296&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;27308&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;12&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b 110 1010 1010 &lt;strong&gt;0000&lt;/strong&gt;&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b 110 1010 1010 &lt;strong&gt;1100&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2063&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;54615&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;55127&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;512&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b 1101 01&lt;strong&gt;0&lt;/strong&gt;1 0101 0111&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b 1101 01&lt;strong&gt;1&lt;/strong&gt;1 0101 0111&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2074&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;46758&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;111270&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;64512&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b 1011 0&lt;strong&gt;1&lt;/strong&gt;10 1010 0110&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b &lt;strong&gt;1&lt;/strong&gt; 1011 0&lt;strong&gt;0&lt;/strong&gt;10 1010 0110&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2077&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;43940&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;48036&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4096&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b 101&lt;strong&gt;0&lt;/strong&gt; 1011 1010 0100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b 101&lt;strong&gt;1&lt;/strong&gt; 1011 1010 0100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2090&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;59752&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;125032&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;65280&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b 1110 100&lt;strong&gt;1&lt;/strong&gt; 0110 1000&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b &lt;strong&gt;1&lt;/strong&gt; 1110 100&lt;strong&gt;0&lt;/strong&gt; 0110 1000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;2096&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;43476&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;47572&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;4096&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b 101&lt;strong&gt;0&lt;/strong&gt; 1001 1101 0100&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;0b 101&lt;strong&gt;1&lt;/strong&gt; 1001 1101 0100&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;这个Bug有点迷~&lt;/p&gt;
+
+&lt;h2 id=&quot;相关链接&quot;&gt;相关链接&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/272c5dfa3eef&quot;&gt;参考文章&lt;/a&gt;
+&lt;a href=&quot;https://gitee.com/kikyoulzg/calendark&quot;&gt;项目地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;ps:可以先看看项目的readme的&lt;strong&gt;关于开发&lt;/strong&gt;这段&lt;/p&gt;</content><author><name></name></author><summary type="html">问题是酱紫的 现在有一个如下包含1900-2100这201年间每天的日期信息字典列表: [{‘year’: 1901, ‘month’: 1, ‘day’: 1, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 11}, {‘year’: 1901, ‘month’: 1, ‘day’: 2, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 12},………..{‘year’: 2100, ‘month’: 12, ‘day’: 31, ‘lunar_year’: 2100, ‘lunar_leap’: False, ‘lunar_month’: 12, ‘lunar_day’: 1}]</summary></entry><entry><title type="html">迟来的满宝</title><link href="kikyoulzg.github.io/2019/03/24/%E8%BF%9F%E6%9D%A5%E7%9A%84%E6%BB%A1%E5%AE%9D.html" rel="alternate" type="text/html" title="迟来的满宝" /><published>2019-03-24T10:17:09+08:00</published><updated>2019-03-24T10:17:09+08:00</updated><id>kikyoulzg.github.io/2019/03/24/%E8%BF%9F%E6%9D%A5%E7%9A%84%E6%BB%A1%E5%AE%9D</id><content type="html" xml:base="kikyoulzg.github.io/2019/03/24/%E8%BF%9F%E6%9D%A5%E7%9A%84%E6%BB%A1%E5%AE%9D.html">&lt;p&gt;咸鱼也有五宝式姐了(｡･ω･｡)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/downloads/siki.jpg&quot; alt=&quot;siki&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">咸鱼也有五宝式姐了(｡･ω･｡)</summary></entry><entry><title type="html">不太厨的月厨事件簿#1</title><link href="kikyoulzg.github.io/2019/03/13/%E4%B8%8D%E5%A4%AA%E5%8E%A8%E7%9A%84%E6%9C%88%E5%8E%A8%E4%BA%8B%E4%BB%B6%E7%B0%BF-1.html" rel="alternate" type="text/html" title="不太厨的月厨事件簿#1" /><published>2019-03-13T12:06:35+08:00</published><updated>2019-03-13T12:06:35+08:00</updated><id>kikyoulzg.github.io/2019/03/13/%E4%B8%8D%E5%A4%AA%E5%8E%A8%E7%9A%84%E6%9C%88%E5%8E%A8%E4%BA%8B%E4%BB%B6%E7%B0%BF#1</id><content type="html" xml:base="kikyoulzg.github.io/2019/03/13/%E4%B8%8D%E5%A4%AA%E5%8E%A8%E7%9A%84%E6%9C%88%E5%8E%A8%E4%BA%8B%E4%BB%B6%E7%B0%BF-1.html">&lt;p&gt;事件代号——&lt;em&gt;MBaacc&lt;/em&gt;
+事件等级——&lt;em&gt;A+&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;记录：假期的时候，有个熊孩子来我家玩，我见他在打我的世界，打了许久，似乎是在挖一条从家通往河流的水道（据说是要引水来种田，但我感jio以他那种从房子底下开始挖的方式大概会先把家给淹掉吧）。我感觉有必要给他玩点更有意思的游戏，这时我想起自己小时候看他父亲玩过的机械迷城（尽管当时我并不知道它叫这个名字），于是乎下载了lutris这个linux上的游戏平台，之前在deepin论坛上看到网友说那里能找到许多游戏。一搜，果然有。于是本来应该躺着机械迷城的地方却躺着名为&lt;strong&gt;MELTY BLOOD Actress Again -Current Code&lt;/strong&gt;的游戏，鬼知道到底发生了什么；）
+&lt;img src=&quot;/downloads/mbaacc1.png&quot; alt=&quot;&quot; /&gt;
+月厨对melty blood（后简称mb）应该不会陌生，它是&lt;strong&gt;月姬&lt;/strong&gt;的延伸作品，不过mb和月姬最大的不同在于它是一个&lt;strong&gt;格斗游戏&lt;/strong&gt;！最早的版本是在2002年发售的，而这个mbaacc则是2011年发售的面向pc平台的最终版，大家可以去月姬格斗吧找到破解版，当然，如果想支持正版那就去steam购买（应该不贵）。&lt;/p&gt;
+
+&lt;p&gt;虽然是格斗游戏，但是里面每个角色都有剧情，并且全程有语音。游戏的人物虽然不多，但是玩过月姬（包括plus+disc和歌月十夜）的你一定会灰常带感！&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/downloads/mbaacc2.png&quot; alt=&quot;紫苑vs栗子&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/downloads/mbaacc3.png&quot; alt=&quot;推土贵vs爱尔奎特&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/downloads/mbaacc4.png&quot; alt=&quot;喵喵&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;格斗画面是酱紫的&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/downloads/mbaacc5.png&quot; alt=&quot;家暴现场&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;既然是格斗游戏那么均衡和手感就非常重要，mbaacc的均衡还是不错的，没有像初代那样一招秒杀的bug，至于手感，我一个只玩过拳皇的基友说还是很流畅的。当然,你自己设置一套合手的键位也许能大大提升游戏体验，steam版游戏内可设置，破解版有专门的键位修改器。&lt;/p&gt;
+
+&lt;p&gt;主要的按键有：上 下 左 右 轻击 中击 重击 特殊键 前面四个按键一起按的快捷键，我对应的键位是：w s a d  j k l i u。如果你是pvp的话建议使用大键盘（用笔记本的键盘很容易打到对方的手）。&lt;/p&gt;
+
+&lt;p&gt;角色的招式表可以在游戏内的command list查看，这里要指出的是←↓→这样的指令其实只要按←↓→就可以了，不过三个按键的节奏你自己琢磨琢磨，反正我是老按不出（&lt;/p&gt;
+
+&lt;p&gt;说来也有趣，本来只是想让我上面提到的基友试试mbaacc的手感如何，谁知道他后来居然跑去玩月姬了hhhhhh。&lt;/p&gt;
+
+&lt;p&gt;链接：
+&lt;a href=&quot;https://www10.atwiki.jp/mbaacczh/&quot;&gt;mbaacc wiki&lt;/a&gt;
+&lt;a href=&quot;https://www.bilibili.com/video/av24627300&quot;&gt;月姬格斗全人物路线翻译合集&lt;/a&gt;
+&lt;a href=&quot;https://manhua.dmzj.com/meltyblood&quot;&gt;mb的漫画&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;one more thing:
+式姐赛高~!（震声）&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/downloads/mbaacc6.jpeg&quot; alt=&quot; &quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">事件代号——MBaacc 事件等级——A+</summary></entry><entry><title type="html">不太厨的月厨事件簿#0</title><link href="kikyoulzg.github.io/2019/02/26/%E4%B8%8D%E5%A4%AA%E5%8E%A8%E7%9A%84%E6%9C%88%E5%8E%A8%E4%BA%8B%E4%BB%B6%E7%B0%BF-0.html" rel="alternate" type="text/html" title="不太厨的月厨事件簿#0" /><published>2019-02-26T17:24:29+08:00</published><updated>2019-02-26T17:24:29+08:00</updated><id>kikyoulzg.github.io/2019/02/26/%E4%B8%8D%E5%A4%AA%E5%8E%A8%E7%9A%84%E6%9C%88%E5%8E%A8%E4%BA%8B%E4%BB%B6%E7%B0%BF#0</id><content type="html" xml:base="kikyoulzg.github.io/2019/02/26/%E4%B8%8D%E5%A4%AA%E5%8E%A8%E7%9A%84%E6%9C%88%E5%8E%A8%E4%BA%8B%E4%BB%B6%E7%B0%BF-0.html">&lt;p&gt;事件代号——&lt;em&gt;fate HF&lt;/em&gt;
+事件等级——&lt;em&gt;A&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;记录：能清晰地记得我和两个朋友是在1月11晚上在沈阳看的fsn hf I.presage flower。虽然电影院里人不多，旁边坐着的也不是女票，但是这部电影能在大陆上映真是没想到，所以一上映就连拖带拽地带着两个抱怨“明明是圣杯战争却在谈恋爱！”，“充满了恋爱的酸臭味！”的朋友去看。&lt;/p&gt;
+
+&lt;p&gt;作为fsn的第三条线，和另外两条线（fate线和远坂凛线）不一样，全程气氛都比较黑暗和压抑，但是也只有这条线解释了圣杯战争的本质是什么，heaven feel是什么，御三家是怎么回事，黑圣杯是怎么回事。当然，这次上映的fsn hf三部曲的第一部，和在香港上映的第二部都只是在铺垫，上面说的那些问题都要等到第三部才会给出解释。不过第三部的上映可能还要不少时日，于是我就去b站找了dalao录的游戏视频来看（以后就当再看一次特效max版好了），up主的链接我会放到文章的底部，有兴趣的可以去他的收藏里面找来看看。没时间的可以在这看我的剧透。&lt;/p&gt;
+
+&lt;p&gt;首先，我们可以认为fsn是包含在主要的型月世界里面的，为什么这样说呢，有图为证，&lt;strong&gt;苍崎&lt;/strong&gt;这个词就是最有力的证据。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/downloads/fhf1.png&quot; alt=&quot;480419267.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;那么，魔术师们的终极目标也就只有一个，到达&lt;strong&gt;根源之涡&lt;/strong&gt;。那么“根源之涡”又是什么呢，hf线里伊莉雅是这么说的——“以神秘学来说，在这个世界的外侧有个站在次元论顶点的‘力’，被称为‘根源之涡’，是所有事情的开端之坐标，那即是万物之始，也是终，记录这个世界的全部，做出这个世界的天神之座位。”&lt;/p&gt;
+
+&lt;p&gt;而艾因兹贝伦所失去的神秘，也就是&lt;strong&gt;第三魔法&lt;/strong&gt;heaven feel，其实就是打开通往根源之涡的洞穴，利用那里庞大的魔力来实现奇迹——“灵魂物质化”。&lt;/p&gt;
+
+&lt;p&gt;问题来了，如何打开那个通往根源之涡的洞穴呢，用锄头凿么，当然不是。heaven feel是利用时间轴之外的纯粹“魂魄”——也就是这个世界道理之外却能干涉这个世界的外界之力——也就是&lt;strong&gt;英灵&lt;/strong&gt;的本质。master把servant召唤到这个世界，然后通过&lt;strong&gt;圣杯战争&lt;/strong&gt;让魂魄被“小圣杯”吸收，当小圣杯存满启动“大圣杯”所需要的魂魄分量时，在里面的英灵回到英灵座的瞬间，以大圣杯来固定住微微打开的洞穴。&lt;/p&gt;
+
+&lt;p&gt;这里的&lt;strong&gt;大圣杯&lt;/strong&gt;其实就是冬木的柳洞寺地底下的一个大型魔法阵，其用60年的时间从灵脉吸收大量的魔力。&lt;strong&gt;小圣杯&lt;/strong&gt;则是类似于钥匙一样的存在，在zero里是爱丽丝菲尔，在stay night里是伊莉雅。&lt;/p&gt;
+
+&lt;p&gt;根源之涡，第三魔法，圣杯战争，圣杯间的关系大概就是这样，然而，&lt;strong&gt;黑圣杯&lt;/strong&gt;又是怎么回事呢？其实这个是第三次圣杯战争中艾因茨贝伦违规召唤的复仇者——“安格鲁·麦亚”的缘故，由于他战败后魂魄进入圣杯中，而他的本质是带有方向性的&lt;strong&gt;此世全部之恶&lt;/strong&gt;，因此圣杯内部纯粹的魔力就被施加了方向性，这就是黑之圣杯。其实圣杯内部被他占据以后，圣杯要实现的愿望早就确定了，zero的第四次圣杯战争只是为了让小安成形而补充魔力而已。不过切丝的果断破坏让小安无法顺利诞生，不过其碎片一部分在造就了黑泥麻婆，另一部分被虫爷植入了樱的体内。&lt;/p&gt;
+
+&lt;p&gt;疑问：
+根源之涡和英灵都是在世界外侧的力，那么这两个东西是指同一个东西吗，还是说，一个是盖亚，一个是阿赖耶，都是抑制力但方向不同？（去萌娘百科看了下，根源之涡，英灵座，抑制力都在外侧，但不是一样的东西）&lt;/p&gt;
+
+&lt;p&gt;以及为什么不在英灵来的时候用大圣杯的魔力固定洞穴，而是在回去的时候固定，是因为“魂魄”来的时候不会打开洞穴吗？而是利用魔法阵通过类似降灵的方法召唤的？&lt;/p&gt;
+
+&lt;p&gt;就算要7位master，那么都用自家的魔术师不就好了？这样就不用这么麻烦的打个你死我活了。&lt;/p&gt;
+
+&lt;p&gt;链接：
+&lt;a href=&quot;https://space.bilibili.com/10115244/&quot;&gt;up主dalao的主页&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">事件代号——fate HF 事件等级——A</summary></entry><entry><title type="html">希望存于虚空</title><link href="kikyoulzg.github.io/2019/02/05/%E5%B8%8C%E6%9C%9B%E5%AD%98%E4%BA%8E%E8%99%9A%E7%A9%BA.html" rel="alternate" type="text/html" title="希望存于虚空" /><published>2019-02-05T01:10:02+08:00</published><updated>2019-02-05T01:10:02+08:00</updated><id>kikyoulzg.github.io/2019/02/05/%E5%B8%8C%E6%9C%9B%E5%AD%98%E4%BA%8E%E8%99%9A%E7%A9%BA</id><content type="html" xml:base="kikyoulzg.github.io/2019/02/05/%E5%B8%8C%E6%9C%9B%E5%AD%98%E4%BA%8E%E8%99%9A%E7%A9%BA.html">&lt;p&gt;&lt;img src=&quot;/downloads/fgo5.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;除夕夜，春晚索然无味，反倒是fgo2的序章使我异常激动，原来迦勒底在南极，萝莉达芬奇亲，异闻带……在序章的最后播放的动画只能说，精彩！让我们踏上新的征程吧！马修！&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">算法之不撞南墙不回头</title><link href="kikyoulzg.github.io/2018/12/01/%E7%AE%97%E6%B3%95%E4%B9%8B%E4%B8%8D%E6%92%9E%E5%8D%97%E5%A2%99%E4%B8%8D%E5%9B%9E%E5%A4%B4.html" rel="alternate" type="text/html" title="算法之不撞南墙不回头" /><published>2018-12-01T22:55:41+08:00</published><updated>2018-12-01T22:55:41+08:00</updated><id>kikyoulzg.github.io/2018/12/01/%20%E7%AE%97%E6%B3%95%E4%B9%8B%E4%B8%8D%E6%92%9E%E5%8D%97%E5%A2%99%E4%B8%8D%E5%9B%9E%E5%A4%B4</id><content type="html" xml:base="kikyoulzg.github.io/2018/12/01/%E7%AE%97%E6%B3%95%E4%B9%8B%E4%B8%8D%E6%92%9E%E5%8D%97%E5%A2%99%E4%B8%8D%E5%9B%9E%E5%A4%B4.html">&lt;h2 id=&quot;话不多说上代码&quot;&gt;话不多说，上代码&lt;/h2&gt;
+&lt;p&gt;嘛，还是先说说我们面对的问题吧 （帅不过一秒的我）&lt;/p&gt;
+
+&lt;p&gt;问题其实很简单，输入一个数字n（范围1~9），然后求1～n的全排列。比如n=3，我们就要求123的全排列。高中的数学课也有全排列的问题，但一般不会让你一一列出就是了。&lt;/p&gt;
+
+&lt;p&gt;今个儿就用一种不撞南墙不回头的算法——深度优先算法来解决这个问题。&lt;/p&gt;
+
+&lt;h2 id=&quot;上代码&quot;&gt;上代码&lt;/h2&gt;
+&lt;p&gt;别急，咱先说说解决问题的思路（放下刀子，咱还是盆友）&lt;/p&gt;
+
+&lt;p&gt;就拿123的全排列来举个栗子。我们有分别标着1,2,3的三盒子以及分别标着1,2,3的三张牌。每个盒子只放一张牌，从盒1开始放，放牌顺序是先牌1，再2，最后3。所以，先把牌1放到盒1，接着把牌2放到盒2，接着把牌3放到盒3，一种排列出来了——       123 ，我们不是要求全排列么，对，所以还没完，把牌3从盒3中拿出，我们想把另一张牌放入盒3然而并没有，只好去盒2，把牌2拿出，此时我们有两张牌，我们按照约定的顺序把牌3放进去（之前是牌2，所以现在到3），然后去到盒3把仅有的一张牌2放入——132就出来了，继续继续，把牌2从盒3拿出，去盒2，把牌3拿出（之前是3，所以现在放1，但没有），只好去盒1，把牌1拿出，按照约定的顺序把牌2放入，去盒2，把牌1放入，去盒3，把牌3放入——213出来了……以此类推，可以把231,312,321也求出来。&lt;/p&gt;
+
+&lt;h2 id=&quot;代码&quot;&gt;代码&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+
+int a[10],book[10],n; //用a[]表示盒子，book[]来记录手上有没有某张牌
+
+void dfs(int step)
+{
+    int i;
+    if(step == n + 1)
+    {
+        for(i = 1; i &amp;lt;= n; i++)
+            printf(&quot;%d&quot;,a[i] );
+        printf(&quot;\n&quot;);
+
+        return;
+    }
+
+    //此时站在第step个盒子面前
+    for(i = 1; i &amp;lt;= n; i++)
+    {
+        if(book[i] == 0)  //牌i在手上的意思
+        {
+            a[step] = i;
+            book[i] = 1; //牌已不在手上
+            dfs(step + 1); //骚气的开始
+            book[i] = 0; //将刚才尝试的牌收回，进行下一次尝试
+        }
+    }
+    return;
+}
+
+int main()
+{
+    scanf(&quot;%d&quot;,&amp;amp;n);
+    dfs(1);
+    getchar();getchar();
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;跟着代码走走&quot;&gt;跟着代码走走&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/downloads/sf1.jpg&quot; alt=&quot;字丑加相机渣&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;吐槽&quot;&gt;吐槽&lt;/h2&gt;
+&lt;p&gt;这玩意到底怎么想出来的
+啊哈磊！你的书不给代码下载，我打字很累诶&lt;/p&gt;</content><author><name></name></author><summary type="html">话不多说，上代码 嘛，还是先说说我们面对的问题吧 （帅不过一秒的我）</summary></entry><entry><title type="html">关于把一个c++98的计算器用qt加上图形界面</title><link href="kikyoulzg.github.io/2018/11/04/%E5%85%B3%E4%BA%8E%E6%8A%8A%E4%B8%80%E4%B8%AAc++98%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8%E7%94%A8qt%E5%8A%A0%E4%B8%8A%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2.html" rel="alternate" type="text/html" title="关于把一个c++98的计算器用qt加上图形界面" /><published>2018-11-04T13:45:02+08:00</published><updated>2018-11-04T13:45:02+08:00</updated><id>kikyoulzg.github.io/2018/11/04/%20%E5%85%B3%E4%BA%8E%E6%8A%8A%E4%B8%80%E4%B8%AAc++98%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8%E7%94%A8qt%E5%8A%A0%E4%B8%8A%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2</id><content type="html" xml:base="kikyoulzg.github.io/2018/11/04/%E5%85%B3%E4%BA%8E%E6%8A%8A%E4%B8%80%E4%B8%AAc++98%E7%9A%84%E8%AE%A1%E7%AE%97%E5%99%A8%E7%94%A8qt%E5%8A%A0%E4%B8%8A%E5%9B%BE%E5%BD%A2%E7%95%8C%E9%9D%A2.html">&lt;h2 id=&quot;code&quot;&gt;code:&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;iostream&amp;gt;
+#include &amp;lt;string&amp;gt;
+#include &amp;lt;map&amp;gt;
+#include &amp;lt;cctype&amp;gt;
+#include &amp;lt;sstream&amp;gt;
+
+using namespace std;
+
+
+
+enum token_value {
+    NAME, NUMBER, END,
+    PLUS='+', MINUS='-', MUL='*', DIV='/',
+    PRINT=';', ASSIGN='=', LP='(', RP=')'
+};
+
+token_value curr_tok = PRINT;
+
+double expr(bool get)
+{
+    double term(bool);
+    double left = term(get);
+    for (;;)
+        switch (curr_tok){
+        case PLUS:
+            left += term(true);
+            break;
+        case MINUS:
+            left -= term(true);
+            break;
+        default:
+            return left;
+        }
+}
+
+double term(bool get)
+{
+    double error(const string&amp;amp;);
+    double prim(bool);
+    double left = prim(get);
+    for (;;)
+        switch(curr_tok) {
+        case MUL:
+            left *= prim(true);
+            break;
+        case DIV:
+            if (double d = prim(true)) {
+                left /= d;
+                break;
+            }
+            return error(&quot;divide by 0&quot;);
+        default:
+            return left;
+        }}
+
+double number_value;
+string string_value;
+
+double prim(bool get)
+{
+    map&amp;lt;string,double&amp;gt;table;
+     double error(const string&amp;amp;);
+    token_value get_token();
+    double expr(bool);
+    if(get) get_token();
+
+    switch(curr_tok) {
+    case NUMBER:
+    {
+        double v = number_value;
+        get_token();
+        return v;
+    }
+    case NAME:
+    {
+        double&amp;amp; v = table[string_value];
+        if(get_token() == ASSIGN) v = expr(true);
+        return v;
+    }
+    case MINUS:
+        return -prim(true);
+    case LP:
+    {
+        double e = expr(true);
+        if(curr_tok != RP) return error(&quot;) expected&quot;);
+        get_token();
+        return e;
+    }
+    default:
+        return error(&quot;primary expected&quot;);
+    }
+}
+
+token_value get_token()
+{
+     double error(const string&amp;amp;);
+    char ch;
+    do {
+        if(!cin.get(ch)) return curr_tok = END;
+    } while(ch != '\n' &amp;amp;&amp;amp; isspace(ch));
+    switch (ch){
+    case ';':
+    case '\n':
+        return curr_tok = PRINT;
+    case '*':
+    case '/':
+    case '-':
+    case '+':
+    case '(':
+    case ')':
+    case '=':
+        return curr_tok = token_value(ch);
+    case '0': case '1': case '2': case '3': case '4':
+    case '5': case '6': case '7': case '8': case '9':
+    case '.':
+        cin.putback(ch);
+        cin &amp;gt;&amp;gt;  number_value;
+        return curr_tok=NUMBER;
+    default:
+        if (isalpha(ch)) {
+            string_value = ch;
+            while (cin.get(ch) &amp;amp;&amp;amp; isalnum(ch)) string_value.push_back(ch);
+            cin.putback(ch);
+            return curr_tok=NAME;
+        }
+    }
+        error (&quot;bad token&quot;);
+        return curr_tok = PRINT;
+}
+        int no_of_errors;
+
+double error(const string&amp;amp; s)
+        {
+            no_of_errors++;
+            cerr &amp;lt;&amp;lt; &quot;error:&quot; &amp;lt;&amp;lt; s &amp;lt;&amp;lt; '\n';
+                return 1;
+        }
+
+istream* input;
+int main(int argc, char* argv[])
+{
+    map&amp;lt;string,double&amp;gt;table;
+    switch (argc) {
+    case 1: 
+        input = &amp;amp;cin;
+        break;
+    case 2:
+        input = new istringstream(argv[1]);
+        break;
+default:
+    error (&quot;too many arguments&quot;);
+    return 1;
+        }
+    table[&quot;pi&quot;] = 3.1415926535897932385;
+    table[&quot;e&quot;] = 2.7182818284590452354;
+
+    while (*input){
+        get_token();
+        if (curr_tok == END)break;
+        if (curr_tok == PRINT)continue;
+        cout &amp;lt;&amp;lt; expr(false) &amp;lt;&amp;lt; '\n';
+    }
+    if (input != &amp;amp;cin)delete input;
+    return no_of_errors;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;这是在书上抄下来的c++代码,你可以编译然后在终端运行一下.然而我想给它加个ui,那就用qt吧!下面是用设计师绘制的界面
+&lt;img src=&quot;/downloads/qt1.png&quot; alt=&quot;&quot; /&gt;
+问题来了.
+1.原来的程序的输入用的是cin,但是qt的控件QTextEdit似乎是用text()函数获取输入的字符串,这里要如何转换呢.
+2.原输出是直接cout « expr(flase) «endl,qt的控件QTextBrowser是用textBrowser-&amp;gt;setText(QString::number(result,’f’,2));这样的,如何转换呢&lt;/p&gt;</content><author><name></name></author><summary type="html">code: ``` #include #include #include &amp;lt;map&amp;gt; #include #include</summary></entry><entry><title type="html">图形编程</title><link href="kikyoulzg.github.io/2018/09/24/%E5%9B%BE%E5%BD%A2%E7%BC%96%E7%A8%8B.html" rel="alternate" type="text/html" title="图形编程" /><published>2018-09-24T00:54:27+08:00</published><updated>2018-09-24T00:54:27+08:00</updated><id>kikyoulzg.github.io/2018/09/24/%E5%9B%BE%E5%BD%A2%E7%BC%96%E7%A8%8B</id><content type="html" xml:base="kikyoulzg.github.io/2018/09/24/%E5%9B%BE%E5%BD%A2%E7%BC%96%E7%A8%8B.html">&lt;p&gt;最近又用起了windows，主要有两个原因。一个是我想在电脑上玩一个叫fate grand order的3A大作级的手游（对对对，就是那个非的肝不过欧的；），然而linux上的genymotion卡的我实在受不了（4GB的内存看来是完全不够用），听别人说win上有个叫蓝叠的模拟器很不错，于是决定试试。再一个就是要用一个叫game maker 的游戏引擎的集成环境。。&lt;/p&gt;
+
+&lt;p&gt;gamemaker提供了一个图形编程的功能，就是通过拖动相应的功能模块和简单地点击适当的选项来制作一个游戏。这样新手（就像我）也能简单地做出些小游戏比如bomberman啥的，但是纯粹用图形化编程几个很不好的地方，可读性差，无法复制粘贴（别打我），无法批量修改，拖放点击感觉挺累的2333。&lt;/p&gt;
+
+&lt;p&gt;不过！机智的开发者当然也知道这样不行，所以还提供了GML这个内置的脚本语言，用它就可以开发更大型的游戏了。不得不说的是集成环境提供的帮助手册很好用，如果写c/c++的时候也能方便地调出可以检索的帮助手册就好了。&lt;/p&gt;
+
+&lt;p&gt;我用的是贴吧上的game maker 8.0破解版，现在官网可以下免费的最新版，但是最新版的界面比较专业了不是太会用（没有8.0简单直观的说）。&lt;/p&gt;
+
+&lt;p&gt;one more thing&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://indienova.com/column/7&quot;&gt;game maker的教程&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">最近又用起了windows，主要有两个原因。一个是我想在电脑上玩一个叫fate grand order的3A大作级的手游（对对对，就是那个非的肝不过欧的；），然而linux上的genymotion卡的我实在受不了（4GB的内存看来是完全不够用），听别人说win上有个叫蓝叠的模拟器很不错，于是决定试试。再一个就是要用一个叫game maker 的游戏引擎的集成环境。。</summary></entry></feed>
