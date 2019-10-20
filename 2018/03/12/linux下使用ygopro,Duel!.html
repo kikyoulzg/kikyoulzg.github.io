@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>linux下使用ygopro,Duel! | 凌子的部落格</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="linux下使用ygopro,Duel!" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="有个叫游戏王的集换式卡牌游戏,估计不少像我这样的90后都是玩过的,至少听过吧.而ygopro是一个由圈内一位被称为圆神的大大开发出来的跨平台的游戏王脚本引擎. 附上 项目地址 亲测可以在linux运行,这里说点注意事项: 按照这个 页面 操作 ,可以成功编译,不过游戏要运行还需要一些操作,在~/ygopro下创建以下文件夹 pics: .jpg格式的卡图(177*254) (不过这个链接里的图没有卡片边框,据说带边框的都是用软件从连接中的中间图生成的) deck: .ydk卡组文件。 replay: .yrp录像文件。 再下载 cards.cdb 放到游戏根目录:数据库(选自己语言的) 把ygopro可执行文件复制到~/ygopro ,并在终端打开~/ygopro执行./ygopro,否则无法运行." />
+<meta property="og:description" content="有个叫游戏王的集换式卡牌游戏,估计不少像我这样的90后都是玩过的,至少听过吧.而ygopro是一个由圈内一位被称为圆神的大大开发出来的跨平台的游戏王脚本引擎. 附上 项目地址 亲测可以在linux运行,这里说点注意事项: 按照这个 页面 操作 ,可以成功编译,不过游戏要运行还需要一些操作,在~/ygopro下创建以下文件夹 pics: .jpg格式的卡图(177*254) (不过这个链接里的图没有卡片边框,据说带边框的都是用软件从连接中的中间图生成的) deck: .ydk卡组文件。 replay: .yrp录像文件。 再下载 cards.cdb 放到游戏根目录:数据库(选自己语言的) 把ygopro可执行文件复制到~/ygopro ,并在终端打开~/ygopro执行./ygopro,否则无法运行." />
+<link rel="canonical" href="kikyoulzg.github.io/2018/03/12/linux%E4%B8%8B%E4%BD%BF%E7%94%A8ygopro,Duel!.html" />
+<meta property="og:url" content="kikyoulzg.github.io/2018/03/12/linux%E4%B8%8B%E4%BD%BF%E7%94%A8ygopro,Duel!.html" />
+<meta property="og:site_name" content="凌子的部落格" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-12T23:34:16+08:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"kikyoulzg.github.io/2018/03/12/linux%E4%B8%8B%E4%BD%BF%E7%94%A8ygopro,Duel!.html","dateModified":"2018-03-12T23:34:16+08:00","datePublished":"2018-03-12T23:34:16+08:00","headline":"linux下使用ygopro,Duel!","mainEntityOfPage":{"@type":"WebPage","@id":"kikyoulzg.github.io/2018/03/12/linux%E4%B8%8B%E4%BD%BF%E7%94%A8ygopro,Duel!.html"},"description":"有个叫游戏王的集换式卡牌游戏,估计不少像我这样的90后都是玩过的,至少听过吧.而ygopro是一个由圈内一位被称为圆神的大大开发出来的跨平台的游戏王脚本引擎. 附上 项目地址 亲测可以在linux运行,这里说点注意事项: 按照这个 页面 操作 ,可以成功编译,不过游戏要运行还需要一些操作,在~/ygopro下创建以下文件夹 pics: .jpg格式的卡图(177*254) (不过这个链接里的图没有卡片边框,据说带边框的都是用软件从连接中的中间图生成的) deck: .ydk卡组文件。 replay: .yrp录像文件。 再下载 cards.cdb 放到游戏根目录:数据库(选自己语言的) 把ygopro可执行文件复制到~/ygopro ,并在终端打开~/ygopro执行./ygopro,否则无法运行.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="kikyoulzg.github.io/feed.xml" title="凌子的部落格" /></head>
+<body>    <header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">凌子的部落格</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a></div>
+      </nav></div>
+</header>
+
+
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">linux下使用ygopro,Duel!</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-03-12T23:34:16+08:00" itemprop="datePublished">Mar 12, 2018
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>有个叫游戏王的集换式卡牌游戏,估计不少像我这样的90后都是玩过的,至少听过吧.而ygopro是一个由圈内一位被称为圆神的大大开发出来的跨平台的游戏王脚本引擎.
+附上 <a href="https://github.com/Fluorohydride/ygopro">项目地址</a></p>
+
+<p>亲测可以在linux运行,这里说点注意事项:</p>
+<ul>
+  <li>
+    <p>按照这个 <a href="https://github.com/Fluorohydride/ygopro/wiki/build">页面</a> 操作 ,可以成功编译,不过游戏要运行还需要一些操作,在~/ygopro下创建以下文件夹
+  pics: <a href="https://github.com/moecube/ygopro-images">.jpg格式的卡图(177*254)</a> (不过这个链接里的图没有卡片边框,据说带边框的都是用软件从连接中的中间图生成的)
+  deck: .ydk卡组文件。
+  replay: .yrp录像文件。
+ 再下载 <a href="https://github.com/moecube/ygopro-database">cards.cdb</a> 放到游戏根目录:数据库(选自己语言的)</p>
+  </li>
+  <li>
+    <p>把ygopro可执行文件复制到~/ygopro ,并在终端打开~/ygopro执行./ygopro,否则无法运行.</p>
+  </li>
+  <li>
+    <p>在游戏里无法输入中文 (在linux下会这样,原因不详,但这个大问题)</p>
+  </li>
+  <li>
+    <p>233在线人机:s1.ygo233.com 端口9999
+c萌约战:120.24.169.252 端口233 
+233正式服:s1.ygo233.com 端口233
+萌卡服:182.254.142.247 端口7911</p>
+  </li>
+  <li>
+    <p>懒得组卡可以百度一波,直接把卡组文件扔deck里就可以了,如果想自己组也行,用sqlitestudio打开cards.cdb检索你的卡名然后把它对应的id打到编辑卡组的搜索框回车即可,愉快地组建自己的卡组吧~</p>
+  </li>
+</ul>
+
+<p>如果有完美运行的请show一下,以及欢迎牌友来交流交流.</p>
+
+<p><img src="/downloads/ygopro1.png" alt="" />
+<img src="/downloads/ygopro1a.png" alt="" />
+<img src="/downloads/ygopro1b.png" alt="" /></p>
+
+<h2 id="one-more-thing">one more thing</h2>
+
+<p>各位也可以在虚拟机下使用windows平台下的mycard或者安卓的ygopro-mobile获得最好的体验(我才没有安利,没有)</p>
+
+  </div><a class="u-url" href="/2018/03/12/linux%E4%B8%8B%E4%BD%BF%E7%94%A8ygopro,Duel!.html" hidden></a>
+</article>
+
+
+      </div>
+    </main>
+
+
+  </body>
+
+</html>

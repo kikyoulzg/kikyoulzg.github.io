@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>c&amp;行列式 | 凌子的部落格</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="c&amp;行列式" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="code: #include &lt;malloc.h&gt; #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;stdbool.h&gt; //计算行列式的值，要bool类型的可以直接用stdbool.h~\(≧▽≦)/~啦啦啦（c99）// int * c, n = 0, a, sum = 0; int aq(int a) /*aq计算阶乘*/ { int s = 1; for(int i = 1; i &lt;= a; i ++) s *= i; return s; } void swap(int * a, int * b) /*swap利用地址传递交换两个数的值*/ { int m =* a; * a = * b; *b = m; } bool sa(int * l) /*sa计算在行列式计算过程中每一项前边的符号是正还是负*/ { int n = 0; for(int i = 0; i &lt; a-1; i ++) for(int j = i+1; j &lt; a; j++) if(l[i]&gt;l[j])n++; if(n % 2 == 0) return false; return true; } void perm(int * l,int k,int m) /*perm整个程序里边的核心函数，找出在不同行不同列的所有组合*/ { int i, s = 1; if(k &gt; m) { n++; //递归次数// for(int j = 0; j &lt; a; j ++) s *= c[ l[ j ] + a * j ]; if( sa( l ) ) s*=-1; printf(&quot;%5d 完成度：%2.2f%%\n&quot;, sum+=s , n/( aq( a ) * 0.1 ) * 10 ); } else //全排列// { for(i = k; i &lt;= m; i++) { swap(l + k, l + i); perm(l, k + 1, m); swap(l + k, l + i); } } } /*---------------------------------------------------------------*/ void main() { int * b, i, f, e; system(&quot;color 3e&quot;); u: system(&quot;cls&quot;); printf(&quot;请输入行列式的阶数：\n&quot;); scanf(&quot;%d&quot;, &amp;a);//获取行列式的阶数 b = ( int * ) malloc ( sizeof ( int ) * a ); /*malloc*/ c = ( int * ) malloc ( sizeof ( int ) * a * a ); for( i = 0; i &lt; a; i++) * ( b + i ) = i; for( i = 0; i &lt; a * a; i++) { if( i % a == 0 ){ printf(&quot;请依次输入行列式中第%d行的值（以空格分隔）：\n&quot;,i / a + 1 ); } scanf(&quot;%d&quot;, c + i ); } printf(&quot;\n\n&quot;); perm( b, 0, a - 1 ); /*计算行列式的值*/ printf(&quot;\n行列式展开式共有%d项\n&quot;, aq( a ) ); if ( a % 2 != 0 ) f = a + 1; else f = a; for( i = 0; i &lt; a * a; i ++ ) { if ( i / a + 1 == f / 2 &amp;&amp; i % a == 0) printf(&quot;D = &quot;);//输出“D = ” else if ( i % a == 0) printf(&quot; &quot;); if ( i % a == 0) printf(&quot;┃&quot;); if ( ( i + 1 ) % a == 0) printf(&quot;%2d&quot;, * ( c + i ) ); else printf(&quot;%2d &quot;, * ( c + i ) ); if ( ( i + 1 ) % a == 0 ) printf(&quot;┃&quot;); if ( ( i + 1 ) / a == f / 2 &amp;&amp; ( i + 1 ) % a == 0) printf(&quot; = %d\n&quot;,sum); else if ( ( i + 1 ) % a == 0 ) printf(&quot;\n&quot;); } printf(&quot;\n\n&quot;); printf(&quot;是否继续？（ 1 / 0 ）\n&quot;); scanf(&quot;%d&quot;, &amp;e); n = 0; if( e ==1 ) goto u; else if ( e == 0 ) exit( 0 ); } dosomethink 这个程序利用了行列式的定义来计算行列式的值。也就是找出行列式中所有不同行不同列的所有组合，分别计算每个组合里的数的乘积再乘以-1的它们的逆序数次方，最后累加。（表达能力不好，看不懂可以谷歌一下）" />
+<meta property="og:description" content="code: #include &lt;malloc.h&gt; #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;stdbool.h&gt; //计算行列式的值，要bool类型的可以直接用stdbool.h~\(≧▽≦)/~啦啦啦（c99）// int * c, n = 0, a, sum = 0; int aq(int a) /*aq计算阶乘*/ { int s = 1; for(int i = 1; i &lt;= a; i ++) s *= i; return s; } void swap(int * a, int * b) /*swap利用地址传递交换两个数的值*/ { int m =* a; * a = * b; *b = m; } bool sa(int * l) /*sa计算在行列式计算过程中每一项前边的符号是正还是负*/ { int n = 0; for(int i = 0; i &lt; a-1; i ++) for(int j = i+1; j &lt; a; j++) if(l[i]&gt;l[j])n++; if(n % 2 == 0) return false; return true; } void perm(int * l,int k,int m) /*perm整个程序里边的核心函数，找出在不同行不同列的所有组合*/ { int i, s = 1; if(k &gt; m) { n++; //递归次数// for(int j = 0; j &lt; a; j ++) s *= c[ l[ j ] + a * j ]; if( sa( l ) ) s*=-1; printf(&quot;%5d 完成度：%2.2f%%\n&quot;, sum+=s , n/( aq( a ) * 0.1 ) * 10 ); } else //全排列// { for(i = k; i &lt;= m; i++) { swap(l + k, l + i); perm(l, k + 1, m); swap(l + k, l + i); } } } /*---------------------------------------------------------------*/ void main() { int * b, i, f, e; system(&quot;color 3e&quot;); u: system(&quot;cls&quot;); printf(&quot;请输入行列式的阶数：\n&quot;); scanf(&quot;%d&quot;, &amp;a);//获取行列式的阶数 b = ( int * ) malloc ( sizeof ( int ) * a ); /*malloc*/ c = ( int * ) malloc ( sizeof ( int ) * a * a ); for( i = 0; i &lt; a; i++) * ( b + i ) = i; for( i = 0; i &lt; a * a; i++) { if( i % a == 0 ){ printf(&quot;请依次输入行列式中第%d行的值（以空格分隔）：\n&quot;,i / a + 1 ); } scanf(&quot;%d&quot;, c + i ); } printf(&quot;\n\n&quot;); perm( b, 0, a - 1 ); /*计算行列式的值*/ printf(&quot;\n行列式展开式共有%d项\n&quot;, aq( a ) ); if ( a % 2 != 0 ) f = a + 1; else f = a; for( i = 0; i &lt; a * a; i ++ ) { if ( i / a + 1 == f / 2 &amp;&amp; i % a == 0) printf(&quot;D = &quot;);//输出“D = ” else if ( i % a == 0) printf(&quot; &quot;); if ( i % a == 0) printf(&quot;┃&quot;); if ( ( i + 1 ) % a == 0) printf(&quot;%2d&quot;, * ( c + i ) ); else printf(&quot;%2d &quot;, * ( c + i ) ); if ( ( i + 1 ) % a == 0 ) printf(&quot;┃&quot;); if ( ( i + 1 ) / a == f / 2 &amp;&amp; ( i + 1 ) % a == 0) printf(&quot; = %d\n&quot;,sum); else if ( ( i + 1 ) % a == 0 ) printf(&quot;\n&quot;); } printf(&quot;\n\n&quot;); printf(&quot;是否继续？（ 1 / 0 ）\n&quot;); scanf(&quot;%d&quot;, &amp;e); n = 0; if( e ==1 ) goto u; else if ( e == 0 ) exit( 0 ); } dosomethink 这个程序利用了行列式的定义来计算行列式的值。也就是找出行列式中所有不同行不同列的所有组合，分别计算每个组合里的数的乘积再乘以-1的它们的逆序数次方，最后累加。（表达能力不好，看不懂可以谷歌一下）" />
+<link rel="canonical" href="kikyoulzg.github.io/2017/09/17/c&%E8%A1%8C%E5%88%97%E5%BC%8F.html" />
+<meta property="og:url" content="kikyoulzg.github.io/2017/09/17/c&%E8%A1%8C%E5%88%97%E5%BC%8F.html" />
+<meta property="og:site_name" content="凌子的部落格" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-09-17T23:12:24+08:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"kikyoulzg.github.io/2017/09/17/c&%E8%A1%8C%E5%88%97%E5%BC%8F.html","dateModified":"2017-09-17T23:12:24+08:00","datePublished":"2017-09-17T23:12:24+08:00","headline":"c&amp;行列式","mainEntityOfPage":{"@type":"WebPage","@id":"kikyoulzg.github.io/2017/09/17/c&%E8%A1%8C%E5%88%97%E5%BC%8F.html"},"description":"code: #include &lt;malloc.h&gt; #include &lt;stdio.h&gt; #include &lt;stdlib.h&gt; #include &lt;stdbool.h&gt; //计算行列式的值，要bool类型的可以直接用stdbool.h~\\(≧▽≦)/~啦啦啦（c99）// int * c, n = 0, a, sum = 0; int aq(int a) /*aq计算阶乘*/ { int s = 1; for(int i = 1; i &lt;= a; i ++) s *= i; return s; } void swap(int * a, int * b) /*swap利用地址传递交换两个数的值*/ { int m =* a; * a = * b; *b = m; } bool sa(int * l) /*sa计算在行列式计算过程中每一项前边的符号是正还是负*/ { int n = 0; for(int i = 0; i &lt; a-1; i ++) for(int j = i+1; j &lt; a; j++) if(l[i]&gt;l[j])n++; if(n % 2 == 0) return false; return true; } void perm(int * l,int k,int m) /*perm整个程序里边的核心函数，找出在不同行不同列的所有组合*/ { int i, s = 1; if(k &gt; m) { n++; //递归次数// for(int j = 0; j &lt; a; j ++) s *= c[ l[ j ] + a * j ]; if( sa( l ) ) s*=-1; printf(&quot;%5d 完成度：%2.2f%%\\n&quot;, sum+=s , n/( aq( a ) * 0.1 ) * 10 ); } else //全排列// { for(i = k; i &lt;= m; i++) { swap(l + k, l + i); perm(l, k + 1, m); swap(l + k, l + i); } } } /*---------------------------------------------------------------*/ void main() { int * b, i, f, e; system(&quot;color 3e&quot;); u: system(&quot;cls&quot;); printf(&quot;请输入行列式的阶数：\\n&quot;); scanf(&quot;%d&quot;, &amp;a);//获取行列式的阶数 b = ( int * ) malloc ( sizeof ( int ) * a ); /*malloc*/ c = ( int * ) malloc ( sizeof ( int ) * a * a ); for( i = 0; i &lt; a; i++) * ( b + i ) = i; for( i = 0; i &lt; a * a; i++) { if( i % a == 0 ){ printf(&quot;请依次输入行列式中第%d行的值（以空格分隔）：\\n&quot;,i / a + 1 ); } scanf(&quot;%d&quot;, c + i ); } printf(&quot;\\n\\n&quot;); perm( b, 0, a - 1 ); /*计算行列式的值*/ printf(&quot;\\n行列式展开式共有%d项\\n&quot;, aq( a ) ); if ( a % 2 != 0 ) f = a + 1; else f = a; for( i = 0; i &lt; a * a; i ++ ) { if ( i / a + 1 == f / 2 &amp;&amp; i % a == 0) printf(&quot;D = &quot;);//输出“D = ” else if ( i % a == 0) printf(&quot; &quot;); if ( i % a == 0) printf(&quot;┃&quot;); if ( ( i + 1 ) % a == 0) printf(&quot;%2d&quot;, * ( c + i ) ); else printf(&quot;%2d &quot;, * ( c + i ) ); if ( ( i + 1 ) % a == 0 ) printf(&quot;┃&quot;); if ( ( i + 1 ) / a == f / 2 &amp;&amp; ( i + 1 ) % a == 0) printf(&quot; = %d\\n&quot;,sum); else if ( ( i + 1 ) % a == 0 ) printf(&quot;\\n&quot;); } printf(&quot;\\n\\n&quot;); printf(&quot;是否继续？（ 1 / 0 ）\\n&quot;); scanf(&quot;%d&quot;, &amp;e); n = 0; if( e ==1 ) goto u; else if ( e == 0 ) exit( 0 ); } dosomethink 这个程序利用了行列式的定义来计算行列式的值。也就是找出行列式中所有不同行不同列的所有组合，分别计算每个组合里的数的乘积再乘以-1的它们的逆序数次方，最后累加。（表达能力不好，看不懂可以谷歌一下）","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="kikyoulzg.github.io/feed.xml" title="凌子的部落格" /></head>
+<body>    <header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">凌子的部落格</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a></div>
+      </nav></div>
+</header>
+
+
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">c&amp;行列式</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2017-09-17T23:12:24+08:00" itemprop="datePublished">Sep 17, 2017
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <hr />
+<h2 id="code">code:</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> #include &lt;malloc.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;             
+#include &lt;stdbool.h&gt;     //计算行列式的值，要bool类型的可以直接用stdbool.h~\(≧▽≦)/~啦啦啦（c99）//
+                                  
+int * c,                       
+      n = 0,                  
+      a,                         
+      sum = 0;             
+int aq(int a)           /*aq计算阶乘*/              
+{
+    int s = 1;
+    for(int i = 1; i &lt;= a; i ++)
+          s *= i;
+    return s;
+}
+void swap(int * a, int * b)         /*swap利用地址传递交换两个数的值*/
+{
+    int m =* a;
+    * a = * b;
+    *b = m;
+}
+bool sa(int * l)            /*sa计算在行列式计算过程中每一项前边的符号是正还是负*/
+{
+    int n = 0;
+    for(int i = 0; i &lt; a-1; i ++)
+         for(int j = i+1; j &lt; a; j++)
+               if(l[i]&gt;l[j])n++;
+    if(n % 2 == 0) return false;
+    return true;
+}
+void perm(int * l,int k,int m)          /*perm整个程序里边的核心函数，找出在不同行不同列的所有组合*/
+{
+    int i, s = 1;
+    if(k &gt; m)
+    {
+        n++;            //递归次数//
+        for(int j = 0; j &lt; a; j ++)
+              s *= c[ l[ j ] + a * j ];
+        if( sa( l ) ) s*=-1;
+      
+        printf("%5d      完成度：%2.2f%%\n", sum+=s , n/( aq( a ) * 0.1 ) * 10 );
+    }
+    else            //全排列//
+    {
+        for(i = k; i &lt;= m; i++)
+        {
+            swap(l + k, l + i);
+            perm(l, k + 1, m);
+            swap(l + k, l + i);
+        }
+    }
+}
+/*---------------------------------------------------------------*/
+void main()
+{
+    int * b,
+    i, 
+    f, 
+    e;
+    system("color 3e");
+u: system("cls");
+    printf("请输入行列式的阶数：\n");
+    scanf("%d", &amp;a);//获取行列式的阶数
+    b = ( int * ) malloc ( sizeof ( int ) * a );            /*malloc*/
+    c = ( int * ) malloc ( sizeof ( int ) * a * a );
+    for( i = 0; i &lt; a; i++)
+         * ( b + i ) = i;
+    for( i = 0; i &lt; a * a; i++)
+    {
+        if( i % a == 0 ){
+            printf("请依次输入行列式中第%d行的值（以空格分隔）：\n",i / a + 1 );
+    }
+        scanf("%d", c + i );
+    }
+    printf("\n\n");
+    perm( b, 0, a - 1 );            /*计算行列式的值*/
+    printf("\n行列式展开式共有%d项\n", aq( a ) );
+    if ( a % 2 != 0 ) f = a + 1;
+        else f = a;
+    for( i = 0; i &lt; a * a; i ++ )
+    {       
+        if ( i / a + 1 == f / 2 &amp;&amp; i % a == 0) 
+            printf("D = ");//输出“D = ”
+        else if ( i % a == 0) 
+                    printf("    ");
+        if ( i % a == 0) 
+            printf("┃");
+        if ( ( i + 1 ) % a == 0) 
+            printf("%2d", * ( c + i ) );
+        else printf("%2d ", * ( c + i ) );
+        if ( ( i + 1 ) % a == 0 ) 
+            printf("┃");
+        if ( ( i + 1 ) / a == f / 2 &amp;&amp; ( i + 1 ) % a == 0) 
+            printf(" = %d\n",sum);
+        else if ( ( i + 1 ) % a == 0 ) 
+                    printf("\n");
+    }
+    printf("\n\n");
+    printf("是否继续？（ 1 / 0 ）\n");
+    scanf("%d", &amp;e);
+    n = 0;
+    if( e ==1 ) goto u;
+    else if ( e == 0 ) exit( 0 );
+   }
+</code></pre></div></div>
+<h2 id="dosomethink">dosomethink</h2>
+<ul>
+  <li>这个程序利用了行列式的定义来计算行列式的值。也就是找出行列式中所有不同行不同列的所有组合，分别计算每个组合里的数的乘积再乘以-1的它们的逆序数次方，最后累加。（表达能力不好，看不懂可以谷歌一下）</li>
+</ul>
+
+<p><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c37d3280bcfc7714d2f4422eaea2f7628151dcc8" alt="行列式定义" /></p>
+
+<ul>
+  <li>看代码本身，主函数做的事无非读取行列式然后计算。这是读取行列式的代码。
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  printf("请输入行列式的阶数：\n");
+  scanf("%d", &amp;a);//获取行列式的阶数
+  b =  malloc ( sizeof ( int ) * a );            /*malloc*/
+  c =  malloc ( sizeof ( int ) * a * a );
+  for( i = 0; i &lt; a; i++)
+       * ( b + i ) = i;
+        printf("hallo");
+  for( i = 0; i &lt; a * a; i++)
+  {
+      if( i % a == 0 ){
+          printf("请依次输入行列式中第%d行的值（以空格分隔）：\n",i / a + 1 );
+  }
+      scanf("%d", c + i );
+  }
+</code></pre></div>    </div>
+    <p>我修改了一下</p>
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  printf("请输入行列式的阶数：\n");
+  scanf("%d", &amp;a);//获取行列式的阶数
+  b = ( int * ) malloc ( sizeof ( int ) * a );            /*malloc*/
+  c = ( int * ) malloc ( sizeof ( int ) * a * a );
+  for( i = 0; i &lt; a; i++)
+       * ( b + i ) = i;       //不会到这行了？//
+   printf("hallo\n") ;     
+  for( i = 0; i &lt; a * a; i++)
+  {
+      if( i % a == 0 ){
+          printf("请依次输入行列式中第%d行的值（以空格分隔）：\n",i / a + 1 );
+      }
+            
+      scanf("%d", c+i );
+      printf("%d | ,%d | ,%d\n",i,c[i],b[i] ); 
+        
+  }
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>下面是阶数为2的运行结果</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>请输入行列式的阶数：
+2
+hallo
+请依次输入行列式中第1行的值（以空格分隔）：
+1 2
+0 | ,1 | ,0
+1 | ,2 | ,1
+请依次输入行列式中第2行的值（以空格分隔）：
+3 4
+2 | ,3 | ,0
+3 | ,4 | ,0
+
+
+    4      完成度：50.00%
+   -2      完成度：100.00%
+
+行列式展开式共有2项
+D = ┃ 1  2┃ = -2
+    ┃ 3  4┃
+</code></pre></div></div>
+<p>我不懂的是hallo就出现了一次，说明循环只经过第一个for的函数体一次，但是从1 | ,2 | ,1这行输出看却经过了。不懂。</p>
+<ul>
+  <li>然后是计算，下面是用来计算的perm函数
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>void perm(int * l,int k,int m)          /*perm整个程序里边的核心函数，找出在不同行不同列的所有组合*/
+{
+  int i, s = 1;
+  if(k &gt; m)
+  {
+      n++; 
+      for(int j = 0; j &lt; a; j ++)
+            s *= c[ l[ j ] + a * j ];
+      if( sa( l ) ) s*=-1;
+      
+      printf("%5d      完成度：%2.2f%%\n", sum+=s , n/( aq( a ) * 0.1 ) * 10 );
+  }
+  else  
+  {
+      for(i = k; i &lt;= m; i++)
+      {
+          swap(l + k, l + i);
+          perm(l, k + 1, m);
+          swap(l + k, l + i);
+      }
+  }
+}
+</code></pre></div>    </div>
+    <p>这里涉及了全排列算法，这里是用了递归的全排列算法。我参考了一篇博客。</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>全排列是将一组数按一定顺序进行排列，如果这组数有n个，那么全排列数为n!个。现以{1, 2, 3, 4, 5}为
+
+例说明如何编写全排列的递归算法。
+
+1、首先看最后两个数4, 5。 它们的全排列为4 5和5 4, 即以4开头的5的全排列和以5开头的4的全排列。
+
+由于一个数的全排列就是其本身，从而得到以上结果。
+
+2、再看后三个数3, 4, 5。它们的全排列为3 4 5、3 5 4、 4 3 5、 4 5 3、 5 3 4、 5 4 3 六组数。
+
+即以3开头的和4,5的全排列的组合、以4开头的和3,5的全排列的组合和以5开头的和3,4的全排列的组合.
+
+从而可以推断，设一组数p = {r1, r2, r3, ... ,rn}, 全排列为perm(p)，pn = p - {rn}。
+
+因此perm(p) = r1perm(p1), r2perm(p2), r3perm(p3), ... , rnperm(pn)。当n = 1时perm(p} = r1。
+
+为了更容易理解，将整组数中的所有的数分别与第一个数交换，这样就总是在处理后n-1个数的全排列。
+</code></pre></div></div>
+<p>前面都懂，就是最后一句没懂</p>
+<blockquote>
+  <p>为了更容易理解，将整组数中的所有的数分别与第一个数交换，这样就总是在处理后n-1个数的全排列。</p>
+</blockquote>
+
+<p>博客里的算法示例</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;  
+
+int n = 0;  
+
+void swap(int *a, int *b) 
+{     
+    int m;     
+    m = *a;     
+    *a = *b;     
+    *b = m; 
+}  
+void perm(int list[], int k, int m) 
+{     
+    int i;     
+    if(k &gt; m)     
+    {          
+        for(i = 0; i &lt;= m; i++)             
+            printf("%d ", list[i]);         
+        printf("\n");         
+        n++;     
+    }     
+    else     
+    {         
+        for(i = k; i &lt;= m; i++)         
+        {             
+            swap(&amp;list[k], &amp;list[i]);             
+            perm(list, k + 1, m);             
+            swap(&amp;list[k], &amp;list[i]);         
+        }     
+    } 
+} 
+int main() 
+{     
+    int list[] = {1, 2, 3, 4, 5};     
+    perm(list, 0, 4);     
+    printf("total:%d\n", n);     
+    return 0; 
+}  
+</code></pre></div></div>
+<p>运行结果显示n=120，但n=1以后我就不知道怎么回事了。
+<code class="highlighter-rouge">swap(&amp;list[k], &amp;list[i]);             
+            perm(list, k + 1, m);             
+            swap(&amp;list[k], &amp;list[i]);  </code>
+第5次递归后，k&gt;m了，执行
+<code class="highlighter-rouge">for(i = 0; i &lt;= m; i++)             
+            printf("%d ", list[i]);         
+        printf("\n");         
+        n++;   </code>
+输出12345，然后n++。这之后应该执行perm函数后面的那个swap函数了吧，这时&amp;list[k], &amp;list[i]里的i是多少呢？接下来又怎么回事呢。</p>
+
+<h2 id="来补个坑">来补个坑</h2>
+<p>上面的问题总算搞懂了。</p>
+<blockquote>
+  <p>打印hallo的语句不在for语句里面。。。</p>
+
+  <p>全排列以{A，B，C}为例：
+第一次，A和A互换位置 （A和A互换位置,位置不变），还是A，{B，C}；  {B，C}继续做全排列（递归）；恢复A和A的位置。
+第二次，A和B互换位置（第二个数与第一个数交换），变成B，{A，C}；  {A，C}继续做全排列（递归）；恢复A和B的位置。
+第三次，A和C互换位置（第三个数与第一个数交换），变成C，{B，A}；  {B，A}继续做全排列（递归）；恢复A和C的位置。</p>
+
+  <p>这就是“将整组数中的所有的数分别与第一个数交换，这样就总是在处理后n-1个数的全排列。”</p>
+</blockquote>
+
+<p>以上是deepin论坛里的网友给的解答，非常感谢他。原理正如他说的那样，但是我跟着代码演算的过程是这样的（相关链接里的第一个链接的程序，{1,2,3}）</p>
+
+<p><img src="/downloads/cyuhls1.png" alt="" /></p>
+
+<p>从原理到代码级别的实现还是有点难度啊，不过食用代码的过程我也吸收了不少营养（递归、全排列、用malloc动态分配内存）。</p>
+<h2 id="来点感悟">来点感悟</h2>
+<p>写程序是用代码实现人的想法，所以怎么把想法转变成代码呢，暂时觉得是这样的：设计main的草图）造main需要的零件）造零件需要的零件）….）组装零件）打磨打磨？加点润滑油？涂点漆？扔进垃圾桶？</p>
+
+<h2 id="相关链接">相关链接</h2>
+<p><a href="http://www.blogjava.net/nokiaguy/archive/2008/05/11/199838.html">全排列算法原理和实现</a></p>
+
+<p><a href="https://www.cnblogs.com/tosone/p/3353625.html">n阶行列式计算</a></p>
+
+  </div><a class="u-url" href="/2017/09/17/c&%E8%A1%8C%E5%88%97%E5%BC%8F.html" hidden></a>
+</article>
+
+
+      </div>
+    </main>
+
+
+  </body>
+
+</html>
