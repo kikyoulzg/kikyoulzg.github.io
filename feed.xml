@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="kikyoulzg.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="kikyoulzg.github.io/" rel="alternate" type="text/html" /><updated>2020-03-15T18:45:15+08:00</updated><id>kikyoulzg.github.io/feed.xml</id><title type="html">凌子的部落格</title><entry><title type="html">意义不明之代码</title><link href="kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81.html" rel="alternate" type="text/html" title="意义不明之代码" /><published>2020-03-10T22:58:17+08:00</published><updated>2020-03-10T22:58:17+08:00</updated><id>kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81</id><content type="html" xml:base="kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81.html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="kikyoulzg.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="kikyoulzg.github.io/" rel="alternate" type="text/html" /><updated>2020-03-15T19:45:21+08:00</updated><id>kikyoulzg.github.io/feed.xml</id><title type="html">凌子的部落格</title><entry><title type="html">意义不明之代码</title><link href="kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81.html" rel="alternate" type="text/html" title="意义不明之代码" /><published>2020-03-10T22:58:17+08:00</published><updated>2020-03-10T22:58:17+08:00</updated><id>kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81</id><content type="html" xml:base="kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81.html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
 
 void swap(char *a,char *b){
 
@@ -114,48 +114,71 @@ wo(list, 0, 3);
 
 &lt;p&gt;不要放弃希望和爱你的人！&lt;/p&gt;</content><author><name></name></author><summary type="html">前言</summary></entry><entry><title type="html">秋之蔷薇</title><link href="kikyoulzg.github.io/2020/01/18/%E7%A7%8B%E4%B9%8B%E8%94%B7%E8%96%87.html" rel="alternate" type="text/html" title="秋之蔷薇" /><published>2020-01-18T14:12:41+08:00</published><updated>2020-01-18T14:12:41+08:00</updated><id>kikyoulzg.github.io/2020/01/18/%E7%A7%8B%E4%B9%8B%E8%94%B7%E8%96%87</id><content type="html" xml:base="kikyoulzg.github.io/2020/01/18/%E7%A7%8B%E4%B9%8B%E8%94%B7%E8%96%87.html">&lt;h2 id=&quot;仅以此文献给无可替代的她&quot;&gt;仅以此文献给无可替代的她&lt;/h2&gt;
 
-&lt;p&gt;男孩抱着荒芜的心来到石头堆砌的森林
-这里没有他认识的人
-也没人认识他
-他觉得这样就可以&lt;/p&gt;
+&lt;p&gt;男孩抱着荒芜的心来到石头堆砌的森林&lt;/p&gt;
 
-&lt;p&gt;他在千奇百怪的石头间穿行
-但只是漫无目的地看着
-这一切他已经不在乎&lt;/p&gt;
+&lt;p&gt;这里没有他认识的人&lt;/p&gt;
 
-&lt;p&gt;吹拂草地的风
-静静流淌的水
-微微凉的雨露
-看不清的雾霭&lt;/p&gt;
+&lt;p&gt;也没人认识他&lt;/p&gt;
 
-&lt;p&gt;日出日落
-斗转星移&lt;/p&gt;
+&lt;p&gt;他觉得这样就可以&lt;/p&gt;
 
-&lt;p&gt;他不知道自己要去到哪
-不知道自己会在什么时候
-什么地方
-停下疲惫的步履&lt;/p&gt;
+&lt;p&gt;他在千奇百怪的石头间穿行&lt;/p&gt;
 
-&lt;p&gt;直到他感觉到一丝疼痛
-他看见自己滴落的血液
-滴落在一朵纯白的花蕾上面&lt;/p&gt;
+&lt;p&gt;但只是漫无目的地看着&lt;/p&gt;
 
-&lt;p&gt;他好奇
-如此美丽动人的花
-缘何有伤人的荆棘&lt;/p&gt;
+&lt;p&gt;这一切他已经不在乎&lt;/p&gt;
 
-&lt;p&gt;他思考
-直到花瓣被鲜血染成深红
-才想起自己被荆棘划破的伤口&lt;/p&gt;
+&lt;p&gt;吹拂草地的风&lt;/p&gt;
 
-&lt;p&gt;未果
-他带着疑问
-踏着秋天的落叶离开了&lt;/p&gt;
+&lt;p&gt;静静流淌的水&lt;/p&gt;
 
-&lt;p&gt;只有心中的那朵蔷薇
-和伤口的痛楚
-让自己感觉
-改变亦或是被改变了什么&lt;/p&gt;</content><author><name></name></author><summary type="html">仅以此文献给无可替代的她</summary></entry><entry><title type="html">魔都记忆·续</title><link href="kikyoulzg.github.io/2019/10/23/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86-%E7%BB%AD.html" rel="alternate" type="text/html" title="魔都记忆·续" /><published>2019-10-23T11:22:33+08:00</published><updated>2019-10-23T11:22:33+08:00</updated><id>kikyoulzg.github.io/2019/10/23/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86%C2%B7%E7%BB%AD</id><content type="html" xml:base="kikyoulzg.github.io/2019/10/23/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86-%E7%BB%AD.html">&lt;p&gt;十一国庆的到来，意味着这次的上海实习之旅也接近尾声了。整个9月犹如眨眼般就过去，期间主要往返于浦东和虹口这两处，上班就待在陆家嘴下班就回到霍山路那边的酒店，如果天气不错的话晚上会去外滩或者酒店旁边的公园散散步，日子朴实而平稳，我不讨厌这种感觉。&lt;/p&gt;
+&lt;p&gt;微微凉的雨露&lt;/p&gt;
+
+&lt;p&gt;看不清的雾霭&lt;/p&gt;
+
+&lt;p&gt;日出日落&lt;/p&gt;
+
+&lt;p&gt;斗转星移&lt;/p&gt;
+
+&lt;p&gt;他不知道自己要去到哪&lt;/p&gt;
+
+&lt;p&gt;不知道自己会在什么时候&lt;/p&gt;
+
+&lt;p&gt;什么地方&lt;/p&gt;
+
+&lt;p&gt;停下疲惫的步履&lt;/p&gt;
+
+&lt;p&gt;直到他感觉到一丝疼痛&lt;/p&gt;
+
+&lt;p&gt;他看见自己滴落的血液&lt;/p&gt;
+
+&lt;p&gt;滴落在一朵纯白的花蕾上面&lt;/p&gt;
+
+&lt;p&gt;他好奇&lt;/p&gt;
+
+&lt;p&gt;如此美丽动人的花&lt;/p&gt;
+
+&lt;p&gt;缘何有伤人的荆棘&lt;/p&gt;
+
+&lt;p&gt;他思考&lt;/p&gt;
+
+&lt;p&gt;直到花瓣被鲜血染成深红&lt;/p&gt;
+
+&lt;p&gt;才想起自己被荆棘划破的伤口&lt;/p&gt;
+
+&lt;p&gt;未果&lt;/p&gt;
+
+&lt;p&gt;他带着疑问&lt;/p&gt;
+
+&lt;p&gt;踏着秋天的落叶离开了&lt;/p&gt;
+
+&lt;p&gt;只有心中的那朵蔷薇&lt;/p&gt;
+
+&lt;p&gt;和伤口的痛楚&lt;/p&gt;
+
+&lt;p&gt;让自己感觉&lt;/p&gt;
+
+&lt;p&gt;改变亦或是被改变了什么&lt;/p&gt;</content><author><name></name></author><summary type="html">仅以此文献给无可替代的她</summary></entry><entry><title type="html">魔都记忆·续</title><link href="kikyoulzg.github.io/2019/10/23/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86-%E7%BB%AD.html" rel="alternate" type="text/html" title="魔都记忆·续" /><published>2019-10-23T11:22:33+08:00</published><updated>2019-10-23T11:22:33+08:00</updated><id>kikyoulzg.github.io/2019/10/23/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86%C2%B7%E7%BB%AD</id><content type="html" xml:base="kikyoulzg.github.io/2019/10/23/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86-%E7%BB%AD.html">&lt;p&gt;十一国庆的到来，意味着这次的上海实习之旅也接近尾声了。整个9月犹如眨眼般就过去，期间主要往返于浦东和虹口这两处，上班就待在陆家嘴下班就回到霍山路那边的酒店，如果天气不错的话晚上会去外滩或者酒店旁边的公园散散步，日子朴实而平稳，我不讨厌这种感觉。&lt;/p&gt;
 
 &lt;p&gt;但是十月份注定是要和这种安逸说再见的，因为我只打算在上海待到这个月中旬，然而公寓式酒店按天算的价格显然是我不能接受的，所以我国庆期间也没有去江浙一带旅行，而是待在上海，寻找最舒服的青年旅社。&lt;/p&gt;
 
