@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>从开源到内部开源 | 凌子的部落格</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="从开源到内部开源" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="kikyoulzg.github.io/2020/03/01/%E4%BB%8E%E5%BC%80%E6%BA%90%E5%88%B0%E5%86%85%E9%83%A8%E5%BC%80%E6%BA%90.html" />
+<meta property="og:url" content="kikyoulzg.github.io/2020/03/01/%E4%BB%8E%E5%BC%80%E6%BA%90%E5%88%B0%E5%86%85%E9%83%A8%E5%BC%80%E6%BA%90.html" />
+<meta property="og:site_name" content="凌子的部落格" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-01T13:45:00+08:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"kikyoulzg.github.io/2020/03/01/%E4%BB%8E%E5%BC%80%E6%BA%90%E5%88%B0%E5%86%85%E9%83%A8%E5%BC%80%E6%BA%90.html","dateModified":"2020-03-01T13:45:00+08:00","datePublished":"2020-03-01T13:45:00+08:00","headline":"从开源到内部开源","mainEntityOfPage":{"@type":"WebPage","@id":"kikyoulzg.github.io/2020/03/01/%E4%BB%8E%E5%BC%80%E6%BA%90%E5%88%B0%E5%86%85%E9%83%A8%E5%BC%80%E6%BA%90.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="kikyoulzg.github.io/feed.xml" title="凌子的部落格" /></head>
+<body>    <header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">凌子的部落格</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a></div>
+      </nav></div>
+</header>
+
+
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">从开源到内部开源</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-03-01T13:45:00+08:00" itemprop="datePublished">Mar 1, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><img src="/downloads/innersource.jpg" alt="" /></p>
+
+<p>开源，也就是所谓的opensource，多用于IT领域，意思就是公开源代码。这个起源于西方开源软件运动的词汇现在已经随处可见，就连微软这样的企业都说要拥抱开源，虽然……</p>
+
+<p>在开源这事里头最最耀眼的大概就是gnu/linux了吧，我最早在初中时代接触到这东西，第一次用是在一台叫逸珑8089b的国产笔记本上（性能非常捉急那种），从此就迷恋上了linux，也就此踏入开源的世界。有兴趣的可以去看看一部叫<a href="https://www.bilibili.com/video/av9512574/">操作系统革命</a>的电影。好像扯得有点远。</p>
+
+<p>今天在一篇博文上看到了innersource这玩意，也就是内部开源。这个内部指的是企业内部，也就是在企业的内部使用这种开源的开发模式，按照我的理解就是创建一个企业内部的代码仓库，企业里面所有开发者都可以对里面的项目访问，克隆，修改和提交补丁。这样一个扁平化的模式是可以大大提高效率的，比如甲团队现在需要用到一个功能，这时乙团队开发的工具A恰好又有这个功能，甲就可以直接拿来用而不必自己造轮子，而且如果发现了bug或者有更好的想法并且有能力实现，这时他就可以把工具A克隆到自己的仓库，然后修改并提交补丁给乙。</p>
+
+<p>我个人觉得这其实不是什么新鲜的概念，对于很多企业来说只不过是从CC、SVN，RTC 等代码版本管理工具迁移到了Git，并且让开发团队更加扁平化。</p>
+
+<p>其实企业如果创建一个面向所有员工的博客，也可以算是一种内部开源，不过开源的不是代码，而是知识，里面的知识来自于每个员工。</p>
+
+  </div><a class="u-url" href="/2020/03/01/%E4%BB%8E%E5%BC%80%E6%BA%90%E5%88%B0%E5%86%85%E9%83%A8%E5%BC%80%E6%BA%90.html" hidden></a>
+</article>
+
+
+      </div>
+    </main>
+
+
+  </body>
+
+</html>
