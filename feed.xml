@@ -1,4 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-03-15T21:51:27+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">凌子的部落格</title><entry><title type="html">意义不明之代码</title><link href="http://localhost:4000/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81.html" rel="alternate" type="text/html" title="意义不明之代码" /><published>2020-03-10T22:58:17+08:00</published><updated>2020-03-10T22:58:17+08:00</updated><id>http://localhost:4000/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81</id><content type="html" xml:base="http://localhost:4000/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81.html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="kikyoulzg.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="kikyoulzg.github.io/" rel="alternate" type="text/html" /><updated>2020-07-12T20:12:50+08:00</updated><id>kikyoulzg.github.io/feed.xml</id><title type="html">凌子的部落格</title><entry><title type="html">格雷厄姆与他的《黑客与画家》</title><link href="kikyoulzg.github.io/2020/06/20/%E6%A0%BC%E9%9B%B7%E5%8E%84%E5%A7%86%E4%B8%8E%E4%BB%96%E7%9A%84-%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6.html" rel="alternate" type="text/html" title="格雷厄姆与他的《黑客与画家》" /><published>2020-06-20T23:25:49+08:00</published><updated>2020-06-20T23:25:49+08:00</updated><id>kikyoulzg.github.io/2020/06/20/%E6%A0%BC%E9%9B%B7%E5%8E%84%E5%A7%86%E4%B8%8E%E4%BB%96%E7%9A%84%E3%80%8A%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6%E3%80%8B</id><content type="html" xml:base="kikyoulzg.github.io/2020/06/20/%E6%A0%BC%E9%9B%B7%E5%8E%84%E5%A7%86%E4%B8%8E%E4%BB%96%E7%9A%84-%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6.html">&lt;p&gt;&lt;img src=&quot;/downloads/heikeyuhuajia.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;其实在我拿到这本书的时候，手机上的电子版已经看了大半，因为我想看看这本书到底值不值得入手实体书，毕竟49块钱差不多是我一天的实习补贴了。&lt;/p&gt;
+
+&lt;p&gt;这本书是阮一峰翻译的所以质量应该还算挺不错，特别是第13章涉及lisp语言的部分他请了田春冰河校译这一点就让人觉得很靠谱。毕竟后者也是《on lisp》的译者。&lt;/p&gt;
+
+&lt;p&gt;《黑客与画家》，这个书名本身就让人觉得有意思，就像雷蒙德的《大教堂与集市》一样，如果不看看内容，你可能猜不透它到底说的是啥。&lt;/p&gt;
+
+&lt;p&gt;它的作者格雷厄姆本来是学哲学的，但是发现哲学太复杂以后在博士阶段转战人工智能。后来创业，开发了viaweb，这个软件后来被雅虎收购了。他创业的初衷其实很简单，那就是赚钱。&lt;/p&gt;
+
+&lt;p&gt;事实上，他毕业以后曾花了很长一段时间学习绘画，并且也曾打算靠此谋生，但结果就是只能挤在窄小的公寓里过着紧巴巴的生活。这个厉害的黑客曾经也是个画家，并且他在书中还表达了一个观点：编程其实是一门手艺，和绘画并没有什么不同。而程序员也是目前最大的工匠群体。&lt;/p&gt;
+
+&lt;p&gt;他的创业公司被雅虎收购以后，他也去了雅虎，但是由于和大公司的氛围格格不入，很快也就辞职了。辞职以后的他用现在的话来说就是有钱有闲，于是他在自己的博客上发表了大量和他创业的经验有关的文章，并广受网友好评。后来把那些文章集合起来，便有了这本书（当然经过了很多增减和排版），所以这本书可说是他的文集，真的不得不佩服作者和o’reilly的编辑们。&lt;/p&gt;
+
+&lt;p&gt;黑客，互联网软件，创业，编程语言。大体上，本书就是关于这些的一个文集。但是如果割裂开来看，其实就不好看了，你要看到的应该是这些东西背后的作者本人和他的经验，这是一个整体。&lt;/p&gt;
+
+&lt;p&gt;这本书读起来其实挺有趣的，有时会觉得作者的一些观点简直太对头了，而有时则不敢苟同，当然大部分时候我都只能喊着666。&lt;/p&gt;
+
+&lt;p&gt;作者说在美国，许多人把孩子扔到校园里，是因为他们往往忙于工作，没时间照顾孩子，而那些被关在校园里的孩子和被关在笼子里的宠物并没有太多区别。如果放在中国，这样说其实挺过分的，毕竟还有许多小孩上不起学的。有多少父母为孩子上个学而伤透脑筋的。不过，对于大部分能上学的孩子，作者说的其实没错，这点上咱和美国差不多。&lt;/p&gt;
+
+&lt;p&gt;作者又说，小孩往往离他们父母的工作都很远，他们只知道父母去工作了然后赚了钱，却对父母的工作本身一无所知。这一点确实是深有同感，我即将进入父母过去所在的行业，但是这个行业到底怎样，我到底要干啥，我适合干这行吗，这些我都不知道。&lt;/p&gt;
+
+&lt;p&gt;现在我依然不理解父母的工作，也许以后会理解，也许不会。但是无论如何，我知道他们是在创造财富，这个财富指的不是钱，而是别人需要的东西，这个东西可以是一个物品也可以是一项服务。&lt;/p&gt;
+
+&lt;p&gt;作者认为创业想要成功，必须创造出别人需要的东西，要换位思考，客户到底需要怎样的东西。&lt;/p&gt;
+
+&lt;p&gt;“在现在，贫富分化，也就是说收入差距拉大，实际上是一种健康的信号。”初次看到书上的这个观点，我确实有点大跌眼镜，贫富差距增大怎么可能是件好事？作者是这样解释的，他认为技术的发展加大了贫富差距，但是技术在加大收入差距的同时，缩小了大部分其他的差距。就好比现在资本家和普通白领都能开得起车（虽然档次可能不同）。&lt;/p&gt;
+
+&lt;p&gt;有趣的是，他后面说道，如果让他选择是生活在一个整体上非常富裕但是他个人相对贫穷的社会，还是生活在一个他个人相对非常富裕但是整体上非常贫穷的社会。他会选择第一个，但是如果他有小孩的话就得另说了（可见他写这本书的时候还没小孩）。&lt;/p&gt;
+
+&lt;p&gt;作者似乎挺鄙视windows的，他使用的是freeBSD，一个类UNIX操作系统。这点倒是和咱差不多233。&lt;/p&gt;
+
+&lt;p&gt;还有就是他花了不少笔墨去写互联网软件，也就是你的程序是运行在服务器上的，用户通过浏览器来使用它。从今天的角度来看，互联网软件确实占据了非常大的市场份额，你手机里的淘宝，微信其实都算互联网软件。但是我个人认为桌面软件是不会被完全淘汰的，除非互联网能绝对安全可靠，并且谁都能用上。再说，如果一个计算器或者日历，似乎也没有必要做成互联网软件的。在我看来一个靠谱的软件，应该在不用联网的情况下也能保证核心功能可用。&lt;/p&gt;
+
+&lt;p&gt;格雷厄姆看起来应该是lisp语言的忠实粉丝无误。他可以说是不留余力地安利了一波lisp，不知道有多少人是因为这本书入了lisp的坑呢？&lt;/p&gt;
+
+&lt;p&gt;他认为目前（指他写这本书的时候）最流行的编程语言里面最先进的那些（比如python）也仅仅达到1958年的lisp的水平。&lt;/p&gt;
+
+&lt;p&gt;我是没用过lisp的，但是姑且相信作者所言是真的（也可以说相信他的品味），毕竟他开发viaweb的时候就大量使用了这种语言。&lt;/p&gt;
+
+&lt;p&gt;我总结一下他说的关于lisp的特点：小众，先进，简洁，可编程性高，适合开发一次性程序，适合再设计，有很强大的宏。&lt;/p&gt;
+
+&lt;p&gt;但是个人认为，lisp在函数库上和主流的差距是很大的。其次不知道目前有没有lisp的性能分析器，作者认为对于效率来说，有一个好的性能分析器比是否是静态类型或者是否是编译型语言要来的重要。最后，lisp能受得住时间的考验吗？我记得王垠有一篇文章叫《lisp已死，lisp永存》，有兴趣可以看看。&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">卡图故事3</title><link href="kikyoulzg.github.io/2020/05/24/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B3.html" rel="alternate" type="text/html" title="卡图故事3" /><published>2020-05-24T06:59:04+08:00</published><updated>2020-05-24T06:59:04+08:00</updated><id>kikyoulzg.github.io/2020/05/24/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B3</id><content type="html" xml:base="kikyoulzg.github.io/2020/05/24/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B3.html">&lt;p&gt;图片太多，就不搬过来了，要看的可以访问原链接&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/a92236e75766&quot;&gt;原链接&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">图片太多，就不搬过来了，要看的可以访问原链接</summary></entry><entry><title type="html">人才市场分析（大雾）</title><link href="kikyoulzg.github.io/2020/04/19/%E4%BA%BA%E6%89%8D%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90.html" rel="alternate" type="text/html" title="人才市场分析（大雾）" /><published>2020-04-19T12:01:39+08:00</published><updated>2020-04-19T12:01:39+08:00</updated><id>kikyoulzg.github.io/2020/04/19/%E4%BA%BA%E6%89%8D%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90</id><content type="html" xml:base="kikyoulzg.github.io/2020/04/19/%E4%BA%BA%E6%89%8D%E5%B8%82%E5%9C%BA%E5%88%86%E6%9E%90.html">&lt;p&gt;&lt;img src=&quot;/downloads/job0.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;对于求职这事，如果不是过来人可能很难感同身受，而且不同的人的体验可能也差别很大，但是有一点是可以明确的，无论是应聘者还是招聘者，都是在“人才”这个市场中进行着博弈。&lt;/p&gt;
+
+&lt;p&gt;在这个市场里面最昂贵的是学术，其次是技术，然后才是学历和证书等。这也是符合物以稀为贵的准则的。不过学术这东西，我个人觉得对于大部分的参与者来说都是没有参考意义的，打个比方就是相当于场内交易。再说，就算是千里马也未必能遇到伯乐吧。至于技术，就比较直观，毕竟企业希望你过去是能创造价值的，而学历和证书无非是拍门砖，你到底有没有料很难光靠这个看出来，但是如果你是能证明自己有这个技术的，那就不一样了，这落到简历上就是你的经验和作品。&lt;/p&gt;
+
+&lt;p&gt;不过如果你和我一样是应届生，那么我猜大部分人都是没有什么经验也没有拿的出手的作品，更别提学术了。所以只好看学历还有证书。&lt;/p&gt;
+
+&lt;p&gt;在这个市场里，学历的价值按照学力来看，研究生 &amp;gt; 本科 &amp;gt; 专科 &amp;gt; 高中，这也是人才市场细分的开始。&lt;/p&gt;
+
+&lt;p&gt;然后再就是专业，其实这个远比我当初(填报志愿的时候)所想的重要，除非你有技术(拿的出手那种)，否则跨领域是很难的，比如一个学经济学的（fintech除外)揣着自己的gayhub（一颗星都没有的那种）去找IT企业，不出意外会这样：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/downloads/job1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在招聘软件里你如果看到，“感谢”，“人才库”等词汇，就是凉了～ 不过让人最绝望的大概就是“被查看”和“不合适”的时间是一样的……估计是看了下照片或者专业就pass了 :(&lt;/p&gt;
+
+&lt;p&gt;如果大家都是软件工程的本科生，大连东软软件学院的和大连理工软件学院的，他们去微软面试就会不一样（我猜的），这就是学校的作用，知名度和在行业内的声誉。&lt;/p&gt;
+
+&lt;p&gt;对于学历，专业和学校的知名度都接近的人，hr会怎么选择呢？其实这里面的情况很多，但是比较简单的办法就是看证书。比如你如果要去应聘会计，那么你最低的配置就是四级+初会，然后如果你有CPA的话优势应该会大很多。&lt;/p&gt;
+
+&lt;p&gt;那作为“人才”这个市场的卖方，我们当然不能只想着让买方开心，哪怕他们才是上帝，对不对？&lt;/p&gt;
+
+&lt;p&gt;试想，在商品市场中，企业是怎么思考的？我们从中又能得到怎样的启发？&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">卡图故事2</title><link href="kikyoulzg.github.io/2020/04/06/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B2.html" rel="alternate" type="text/html" title="卡图故事2" /><published>2020-04-06T21:18:06+08:00</published><updated>2020-04-06T21:18:06+08:00</updated><id>kikyoulzg.github.io/2020/04/06/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B2</id><content type="html" xml:base="kikyoulzg.github.io/2020/04/06/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B2.html">&lt;p&gt;图片太多，就不搬过来了，要看的可以访问原链接&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/2c8e6d6ef786&quot;&gt;原链接&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">图片太多，就不搬过来了，要看的可以访问原链接</summary></entry><entry><title type="html">银行实习生心得</title><link href="kikyoulzg.github.io/2020/03/28/%E9%93%B6%E8%A1%8C%E5%AE%9E%E4%B9%A0%E7%94%9F%E5%BF%83%E5%BE%97.html" rel="alternate" type="text/html" title="银行实习生心得" /><published>2020-03-28T10:12:17+08:00</published><updated>2020-03-28T10:12:17+08:00</updated><id>kikyoulzg.github.io/2020/03/28/%E9%93%B6%E8%A1%8C%E5%AE%9E%E4%B9%A0%E7%94%9F%E5%BF%83%E5%BE%97</id><content type="html" xml:base="kikyoulzg.github.io/2020/03/28/%E9%93%B6%E8%A1%8C%E5%AE%9E%E4%B9%A0%E7%94%9F%E5%BF%83%E5%BE%97.html">&lt;p&gt;其实标题改成整理档案心得也是可以的，因为我的职责就是给风管的老师们整理档案。&lt;/p&gt;
+
+&lt;p&gt;整理档案，听上去挺无脑的，大抵和去工地搬砖差不多吧。但是我知道如果只是把整理档案这事当作机械的劳动那么我就啥也学不到。所以我要思考，在这枯燥的工作中能学到什么。&lt;/p&gt;
+
+&lt;p&gt;一个好的开始是成功的一半，这句箴言确实没毛病。来华兴实习第一天把乱糟糟的出账资料按照客户名区分开来并贴好标签，这是我日后顺利展开工作的基础，如果我没有认真对待的话，后面就会自吃苦头。&lt;/p&gt;
+
+&lt;p&gt;把资料分好类以后，就是整理了，这些资料是银行对公或者对私的授信资料，简单来说就是银行放贷给你，你要给银行提供的资料包括各种合同，说明书等，方便你还不了钱的时候银行好收拾你。银行贷款的业务品种挺多的，比如银行承兑汇票，信用证，流动资金贷款，福费廷等，但是无论哪种业务放款审查表，授信批复，额度使用表是必须有的。&lt;/p&gt;
+
+&lt;p&gt;感觉整理资料的过程是一个与同事交流的过程，不断从同事的反馈中得到改进，比如资料要分成档案，专夹和备份，退回给客户经理的材料三部分，档案的材料顺序按照清单来，一些和利率有关的资料不要放档案里，提前支取申请书单独放，每个单笔单独装订等。。。提问很重要，和人沟通很重要。&lt;/p&gt;
+
+&lt;p&gt;在华宝信托实习的时候每个星期都要往银行跑，办业务，自己除了提供企业的材料和偶尔签个名以外就是看着银行的老师在那忙活，现在自己在银行实习了，嗯……其实感觉银行还是比较忙的，每天早上8点半去到大家都在办公室了，每天下午5点下班的时候大家却还在加班，由于家离得比较远所以我一般都是准时下班开溜的，哈哈哈。&lt;/p&gt;
+
+&lt;p&gt;春节以后，我在的那个部门是2月10号就开始上班了，不过我请了两个星期假，到了龙抬头那天也就是2月24才去，一方面是为了自己，另一方面其实也是为了同事们的安全，嗯，是这样没错。不过每天乘地铁上下班看到这么多人在一个密闭的空间里其实还是很慌的，所幸的是佛山分行食堂的饭菜给我带来了极大的安慰，怀疑厨师是顺德人，但是可能在东北呆久了习惯了东北食堂阿姨那豪爽的饭量，感觉这边阿姨打的饭有点少。&lt;/p&gt;
+
+&lt;p&gt;最后不得不感叹一下，2020年的就业真是太难了T-T&lt;/p&gt;
+
+&lt;p&gt;其实呢，还是自己太菜。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/downloads/cai.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">其实标题改成整理档案心得也是可以的，因为我的职责就是给风管的老师们整理档案。</summary></entry><entry><title type="html">意义不明之代码</title><link href="kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81.html" rel="alternate" type="text/html" title="意义不明之代码" /><published>2020-03-10T22:58:17+08:00</published><updated>2020-03-10T22:58:17+08:00</updated><id>kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81</id><content type="html" xml:base="kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81.html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
 
 void swap(char *a,char *b){
 
@@ -46,9 +132,9 @@ char list[]= {'s', 'u', 'a', 'n', 'q', 'q', 'o', 'r', 'z'};
 wo(list, 0, 3);
 
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">``` #include</summary></entry><entry><title type="html">卡图故事1</title><link href="http://localhost:4000/2020/03/08/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B1.html" rel="alternate" type="text/html" title="卡图故事1" /><published>2020-03-08T00:00:15+08:00</published><updated>2020-03-08T00:00:15+08:00</updated><id>http://localhost:4000/2020/03/08/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B1</id><content type="html" xml:base="http://localhost:4000/2020/03/08/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B1.html">&lt;p&gt;图片太多，就不搬过来了，要看的可以访问原链接&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">``` #include</summary></entry><entry><title type="html">卡图故事1</title><link href="kikyoulzg.github.io/2020/03/08/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B1.html" rel="alternate" type="text/html" title="卡图故事1" /><published>2020-03-08T00:00:15+08:00</published><updated>2020-03-08T00:00:15+08:00</updated><id>kikyoulzg.github.io/2020/03/08/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B1</id><content type="html" xml:base="kikyoulzg.github.io/2020/03/08/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B1.html">&lt;p&gt;图片太多，就不搬过来了，要看的可以访问原链接&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/701148dfd44e&quot;&gt;原链接&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">图片太多，就不搬过来了，要看的可以访问原链接</summary></entry><entry><title type="html">从开源到内部开源</title><link href="http://localhost:4000/2020/03/01/%E4%BB%8E%E5%BC%80%E6%BA%90%E5%88%B0%E5%86%85%E9%83%A8%E5%BC%80%E6%BA%90.html" rel="alternate" type="text/html" title="从开源到内部开源" /><published>2020-03-01T13:45:00+08:00</published><updated>2020-03-01T13:45:00+08:00</updated><id>http://localhost:4000/2020/03/01/%E4%BB%8E%E5%BC%80%E6%BA%90%E5%88%B0%E5%86%85%E9%83%A8%E5%BC%80%E6%BA%90</id><content type="html" xml:base="http://localhost:4000/2020/03/01/%E4%BB%8E%E5%BC%80%E6%BA%90%E5%88%B0%E5%86%85%E9%83%A8%E5%BC%80%E6%BA%90.html">&lt;p&gt;&lt;img src=&quot;/downloads/innersource.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/701148dfd44e&quot;&gt;原链接&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">图片太多，就不搬过来了，要看的可以访问原链接</summary></entry><entry><title type="html">从开源到内部开源</title><link href="kikyoulzg.github.io/2020/03/01/%E4%BB%8E%E5%BC%80%E6%BA%90%E5%88%B0%E5%86%85%E9%83%A8%E5%BC%80%E6%BA%90.html" rel="alternate" type="text/html" title="从开源到内部开源" /><published>2020-03-01T13:45:00+08:00</published><updated>2020-03-01T13:45:00+08:00</updated><id>kikyoulzg.github.io/2020/03/01/%E4%BB%8E%E5%BC%80%E6%BA%90%E5%88%B0%E5%86%85%E9%83%A8%E5%BC%80%E6%BA%90</id><content type="html" xml:base="kikyoulzg.github.io/2020/03/01/%E4%BB%8E%E5%BC%80%E6%BA%90%E5%88%B0%E5%86%85%E9%83%A8%E5%BC%80%E6%BA%90.html">&lt;p&gt;&lt;img src=&quot;/downloads/innersource.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;开源，也就是所谓的opensource，多用于IT领域，意思就是公开源代码。这个起源于西方开源软件运动的词汇现在已经随处可见，就连微软这样的企业都说要拥抱开源，虽然……&lt;/p&gt;
 
@@ -58,9 +144,9 @@ wo(list, 0, 3);
 
 &lt;p&gt;我个人觉得这其实不是什么新鲜的概念，对于很多企业来说只不过是从CC、SVN，RTC 等代码版本管理工具迁移到了Git，并且让开发团队更加扁平化。&lt;/p&gt;
 
-&lt;p&gt;其实企业如果创建一个面向所有员工的博客，也可以算是一种内部开源，不过开源的不是代码，而是知识，里面的知识来自于每个员工。&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">卡图故事0</title><link href="http://localhost:4000/2020/02/17/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B0.html" rel="alternate" type="text/html" title="卡图故事0" /><published>2020-02-17T23:56:29+08:00</published><updated>2020-02-17T23:56:29+08:00</updated><id>http://localhost:4000/2020/02/17/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B0</id><content type="html" xml:base="http://localhost:4000/2020/02/17/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B0.html">&lt;p&gt;图片太多，就不搬过来了，要看的可以访问原链接&lt;/p&gt;
+&lt;p&gt;其实企业如果创建一个面向所有员工的博客，也可以算是一种内部开源，不过开源的不是代码，而是知识，里面的知识来自于每个员工。&lt;/p&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">卡图故事0</title><link href="kikyoulzg.github.io/2020/02/17/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B0.html" rel="alternate" type="text/html" title="卡图故事0" /><published>2020-02-17T23:56:29+08:00</published><updated>2020-02-17T23:56:29+08:00</updated><id>kikyoulzg.github.io/2020/02/17/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B0</id><content type="html" xml:base="kikyoulzg.github.io/2020/02/17/%E5%8D%A1%E5%9B%BE%E6%95%85%E4%BA%8B0.html">&lt;p&gt;图片太多，就不搬过来了，要看的可以访问原链接&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/a6fbffcd464e&quot;&gt;原链接&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">图片太多，就不搬过来了，要看的可以访问原链接</summary></entry><entry><title type="html">新冠反思录</title><link href="http://localhost:4000/2020/02/15/%E6%96%B0%E5%86%A0%E5%8F%8D%E6%80%9D%E5%BD%95.html" rel="alternate" type="text/html" title="新冠反思录" /><published>2020-02-15T00:07:38+08:00</published><updated>2020-02-15T00:07:38+08:00</updated><id>http://localhost:4000/2020/02/15/%E6%96%B0%E5%86%A0%E5%8F%8D%E6%80%9D%E5%BD%95</id><content type="html" xml:base="http://localhost:4000/2020/02/15/%E6%96%B0%E5%86%A0%E5%8F%8D%E6%80%9D%E5%BD%95.html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/a6fbffcd464e&quot;&gt;原链接&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">图片太多，就不搬过来了，要看的可以访问原链接</summary></entry><entry><title type="html">新冠反思录</title><link href="kikyoulzg.github.io/2020/02/15/%E6%96%B0%E5%86%A0%E5%8F%8D%E6%80%9D%E5%BD%95.html" rel="alternate" type="text/html" title="新冠反思录" /><published>2020-02-15T00:07:38+08:00</published><updated>2020-02-15T00:07:38+08:00</updated><id>kikyoulzg.github.io/2020/02/15/%E6%96%B0%E5%86%A0%E5%8F%8D%E6%80%9D%E5%BD%95</id><content type="html" xml:base="kikyoulzg.github.io/2020/02/15/%E6%96%B0%E5%86%A0%E5%8F%8D%E6%80%9D%E5%BD%95.html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
 
 &lt;p&gt;在真正的灾难中要学会自救，自救，自救！&lt;/p&gt;
 
@@ -112,274 +198,4 @@ wo(list, 0, 3);
 
 &lt;p&gt;通过人民日报登记入口、微信、微博等渠道求救。&lt;/p&gt;
 
-&lt;p&gt;不要放弃希望和爱你的人！&lt;/p&gt;</content><author><name></name></author><summary type="html">前言</summary></entry><entry><title type="html">秋之蔷薇</title><link href="http://localhost:4000/2020/01/18/%E7%A7%8B%E4%B9%8B%E8%94%B7%E8%96%87.html" rel="alternate" type="text/html" title="秋之蔷薇" /><published>2020-01-18T14:12:41+08:00</published><updated>2020-01-18T14:12:41+08:00</updated><id>http://localhost:4000/2020/01/18/%E7%A7%8B%E4%B9%8B%E8%94%B7%E8%96%87</id><content type="html" xml:base="http://localhost:4000/2020/01/18/%E7%A7%8B%E4%B9%8B%E8%94%B7%E8%96%87.html">&lt;h2 id=&quot;仅以此文献给无可替代的她&quot;&gt;仅以此文献给无可替代的她&lt;/h2&gt;
-
-&lt;p&gt;男孩抱着荒芜的心来到石头堆砌的森林&lt;/p&gt;
-
-&lt;p&gt;这里没有他认识的人&lt;/p&gt;
-
-&lt;p&gt;也没人认识他&lt;/p&gt;
-
-&lt;p&gt;他觉得这样就可以&lt;/p&gt;
-
-&lt;p&gt;他在千奇百怪的石头间穿行&lt;/p&gt;
-
-&lt;p&gt;但只是漫无目的地看着&lt;/p&gt;
-
-&lt;p&gt;这一切他已经不在乎&lt;/p&gt;
-
-&lt;p&gt;吹拂草地的风&lt;/p&gt;
-
-&lt;p&gt;静静流淌的水&lt;/p&gt;
-
-&lt;p&gt;微微凉的雨露&lt;/p&gt;
-
-&lt;p&gt;看不清的雾霭&lt;/p&gt;
-
-&lt;p&gt;日出日落&lt;/p&gt;
-
-&lt;p&gt;斗转星移&lt;/p&gt;
-
-&lt;p&gt;他不知道自己要去到哪&lt;/p&gt;
-
-&lt;p&gt;不知道自己会在什么时候&lt;/p&gt;
-
-&lt;p&gt;什么地方&lt;/p&gt;
-
-&lt;p&gt;停下疲惫的步履&lt;/p&gt;
-
-&lt;p&gt;直到他感觉到一丝疼痛&lt;/p&gt;
-
-&lt;p&gt;他看见自己滴落的血液&lt;/p&gt;
-
-&lt;p&gt;滴落在一朵纯白的花蕾上面&lt;/p&gt;
-
-&lt;p&gt;他好奇&lt;/p&gt;
-
-&lt;p&gt;如此美丽动人的花&lt;/p&gt;
-
-&lt;p&gt;缘何有伤人的荆棘&lt;/p&gt;
-
-&lt;p&gt;他思考&lt;/p&gt;
-
-&lt;p&gt;直到花瓣被鲜血染成深红&lt;/p&gt;
-
-&lt;p&gt;才想起自己被荆棘划破的伤口&lt;/p&gt;
-
-&lt;p&gt;未果&lt;/p&gt;
-
-&lt;p&gt;他带着疑问&lt;/p&gt;
-
-&lt;p&gt;踏着秋天的落叶离开了&lt;/p&gt;
-
-&lt;p&gt;只有心中的那朵蔷薇&lt;/p&gt;
-
-&lt;p&gt;和伤口的痛楚&lt;/p&gt;
-
-&lt;p&gt;让自己感觉&lt;/p&gt;
-
-&lt;p&gt;改变亦或是被改变了什么&lt;/p&gt;</content><author><name></name></author><summary type="html">仅以此文献给无可替代的她</summary></entry><entry><title type="html">魔都记忆·续</title><link href="http://localhost:4000/2019/10/23/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86-%E7%BB%AD.html" rel="alternate" type="text/html" title="魔都记忆·续" /><published>2019-10-23T11:22:33+08:00</published><updated>2019-10-23T11:22:33+08:00</updated><id>http://localhost:4000/2019/10/23/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86%C2%B7%E7%BB%AD</id><content type="html" xml:base="http://localhost:4000/2019/10/23/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86-%E7%BB%AD.html">&lt;p&gt;十一国庆的到来，意味着这次的上海实习之旅也接近尾声了。整个9月犹如眨眼般就过去，期间主要往返于浦东和虹口这两处，上班就待在陆家嘴下班就回到霍山路那边的酒店，如果天气不错的话晚上会去外滩或者酒店旁边的公园散散步，日子朴实而平稳，我不讨厌这种感觉。&lt;/p&gt;
-
-&lt;p&gt;但是十月份注定是要和这种安逸说再见的，因为我只打算在上海待到这个月中旬，然而公寓式酒店按天算的价格显然是我不能接受的，所以我国庆期间也没有去江浙一带旅行，而是待在上海，寻找最舒服的青年旅社。&lt;/p&gt;
-
-&lt;p&gt;9月30，国庆前一天。我清楚地记得那天去银行办业务却没带身份证结果白跑一趟，也清楚地记得那天的下班时间是下午3点。下班的时候大姐头问我国庆想好去哪浪没有，我说打算把上海的青旅都住一遍，嗯，还真是一塌糊涂的回答。事实上，我只去了三处青旅，每去到一处我就在那住上一两天，在那附近吃吃喝喝还有瞎逛。下班后我先是坐渡轮回虹口那边把酒店给退了，然后去我吃的比较多的一家黄山菜饭给自己好好充个电，饭后感觉有点撑于是去外滩走了走。可能是内心对住了一个月的这边有点留恋的缘故，等我一个箭步缩进地铁口时天已经黑了。&lt;/p&gt;
-
-&lt;p&gt;去的第一家青旅是位于浦东大道的大隐国际青年旅社，这个青旅给我的感觉就是真的大隐隐于世，以至于我好几次走过都没发现它，还好机智的我看到了一条小巷子的YHA标志，最后在巷子深处找到了它。大隐的整体风格有种现代简约的美，从外面无法直接看到里面的庭院，夜色中没有任何复杂的轮廓的高墙和写着大隐Hidden Garden的透着微弱光线的牌子就是这里给我的第一印象。进去以后是一个不算大的庭院，三三两两的人坐在那。不过我不爱坐在外面，因为桌子不是太干净以及蚊子又比较多。我到前台取房卡的时候有个外国的妹子正在和前台小哥攀谈，似乎是在说她订了房间但却没有过来住的事情，最后妹纸说不是要money只是来check out的，前台小哥心里大概长吁了一口气吧。晚上在前台旁边的餐厅折腾博客，rekols大佬远程帮我debug，非常清真。&lt;/p&gt;
-
-&lt;p&gt;一时糊涂的我在网上订了10月1的新易途国际青年旅社，全然没有考虑台风的影响，结果我不仅被吹折了一把雨伞，去到新易途的时候鞋子也湿透了。这家青旅位于江阴路，在南京西路附近。和大隐不同，非常有老城区的那种岁月沉淀感，摆着小石狮子的过道，赏心悦目的池塘，木质结构的楼梯，门和床，充满东方美学的洗漱台。此外还有两层的咖啡厅和摆着遮阳伞的天台。东西方美学的融汇，在这似乎可以看得到。不过在这里的最大快乐是遇到了许多有趣和神奇的人，这可能也是为什么国庆以后我选择住在这的原因吧（不过也遇到了晚上鼻鼾声超大的阿叔，结果一夜未眠）。&lt;/p&gt;
-
-&lt;p&gt;新易途虽好，就是国庆游客太多以至于只订了一天的我想续订都要等到6号，只好辗转到位于蓬莱路的老西门国际青年旅社。这里附近似乎是非常老的街区了，感觉上了年纪的人比别处多，生活气息非常浓厚的地方。虽然这里的装修（特别是室内）比不上新易途，但是这边的物价我只能用舒服来形容，5块钱左右就能吃个不错的早餐（包子和烧麦啥的），旁边的酥饼和生煎也都很好吃（结果吃太多上火了233）。这里的猫猫也十分好撸，我去天台晒衣服或者坐在室外的时候总能摸摸它们，新易途的猫似乎就没这么平易近人。在这里和老外聊得比较多，主要是因为同寝室有个苏格兰的哥们，还有就是喜欢吃面但筷子用得很吃力的爱尔兰小哥（有生以来第一次觉得英语还是要好好学学，太蹩脚了）。&lt;/p&gt;
-
-&lt;p&gt;逛腻了老西门这边的老街但又不想去人太多的景点，我寻思自己总是吃喝玩乐却很久没碰精神食粮了不如就去图书馆看看。我去的是离老西门比较近的上海图书馆，坐地铁可以直达。如果说广州图书馆是穿着时尚的帅小伙，那么上海图书馆给我的感觉就是身穿一袭白袍的老者，稳重而富有内涵。对于一个读者来说，上图值得一去。没记错的话上图有5层（包括负一层的读者食堂）。一楼有特殊的展览室，我去的时候展览的主题是达尔文的物种起源在中国的传播，其中当然就少不了严复的天演论的各种刻本以及马君武翻译的物种起源，此外，民国时的报纸和新文化运动人士的事迹也不少。展览室外面的大厅有一面电子墙，显示不同种类图书借阅数量的比例（不出意外的文学是最多的）等信息的可视化图像，看着还不错。三楼有古籍阅览室，鉴于古文学得太烂我就没去看了，不过在四楼找到了一本挺合我口味的书，叫《黑夜的终结》。&lt;/p&gt;
-
-&lt;p&gt;就这样，国庆的青旅与图书馆之旅结束后，我在新易途住了下来，直到中旬。&lt;/p&gt;
-
-&lt;p&gt;离开上海的那天，我记得，风和来的时候一样轻快地吹拂着。&lt;/p&gt;</content><author><name></name></author><summary type="html">十一国庆的到来，意味着这次的上海实习之旅也接近尾声了。整个9月犹如眨眼般就过去，期间主要往返于浦东和虹口这两处，上班就待在陆家嘴下班就回到霍山路那边的酒店，如果天气不错的话晚上会去外滩或者酒店旁边的公园散散步，日子朴实而平稳，我不讨厌这种感觉。</summary></entry><entry><title type="html">魔都记忆</title><link href="http://localhost:4000/2019/09/28/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86.html" rel="alternate" type="text/html" title="魔都记忆" /><published>2019-09-28T01:24:43+08:00</published><updated>2019-09-28T01:24:43+08:00</updated><id>http://localhost:4000/2019/09/28/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86</id><content type="html" xml:base="http://localhost:4000/2019/09/28/%E9%AD%94%E9%83%BD%E8%AE%B0%E5%BF%86.html">&lt;h2 id=&quot;在上海&quot;&gt;在上海&lt;/h2&gt;
-&lt;p&gt;昔日，胡适写了本书叫“四十自述·在上海”，如今我也来到了上海，虽不敢自比胡适先生，但也不妨写点什么以便他日回忆品味。（其实就是无聊写点东西打发打发时间啦）&lt;/p&gt;
-
-&lt;h2 id=&quot;浦东&quot;&gt;浦东&lt;/h2&gt;
-
-&lt;h3 id=&quot;东方明珠&quot;&gt;东方明珠&lt;/h3&gt;
-&lt;p&gt;我从大连飞到上海的浦东国际机场后，本想顺路坐个磁悬浮列车的，但是立刻又被过百的票价劝退，果断乘坐地铁2号线直接去陆家嘴的环球金融中心。走出陆家嘴地铁站，我看到了大上海的天空，万里无云，是个好天气，就是有点儿热。我走到一个天桥上，一眼就看到了不远处的东方明珠，那标志性的像分子结构一样的造型，让它从周围的高楼大厦中脱颖而出，成了这条gai最靓的仔。&lt;/p&gt;
-
-&lt;h3 id=&quot;华宝信托&quot;&gt;华宝信托&lt;/h3&gt;
-&lt;p&gt;哦，对了，这次来我上海是要到一家叫华宝信托的公司里实习（打杂），他们的办公处在离东方明珠不太远的一栋高端写字楼的59楼。写字楼的一楼有一家星巴克，不过在那坐着的人大多不是为了喝咖啡的，说实话在那喝咖啡应该不是什么愉快的事情，商业氛围太重了。按照约定我在那看到了我的前辈，她也是实习生不过快离职了，所以才找了我来接手。本来我还好奇，上个电梯就能去的办公室用不着专门下来接我吧，事实证明，我还是年轻。这写字楼，电梯是有权限系统的，电梯里有个打卡的装置，用公司的通行卡扫一下，才可以点亮你要去的楼层的按钮，然后办公处的门也需要权限。（其实我只要去空中大厅的华宝前台小姐姐那拿访客卡也会可以上去的，所以前辈下来接我完全是出于好心，谢谢她）&lt;/p&gt;
-
-&lt;p&gt;我主要是在华宝的财务部打杂（虽然我对运营部和数字信息部的兴趣其实更大些），我去到办公室，妹纸前辈带我熟悉了一下工作的地方。不算很大的办公室，但是环境很干亮整洁，设施也很完备，我个人的话图书角倒是没怎么去，去的较多的是茶水间（蜂蜜柠檬水最棒了）。走了一圈，我们回到工位上，妹纸前辈给我发了一份实习生心得让我看看，然后开始恰饭（我来到的时候，是11点半以后了，是午饭和午休的时间），得知我也还没吃后，在我的选择下，她带我去了负一楼的罗森（负一楼很多餐厅，但我吃不起2333，一份很普通的饭要40多）。&lt;/p&gt;
-
-&lt;p&gt;我是8月28去的，妹纸前辈9月2离职，短短的数天，我从一个啥都不会的萌新成长为一个啥都不太会的萌新，接过了给老师们打杂的重任。我的华宝实习，开始了——&lt;/p&gt;
-
-&lt;h3 id=&quot;青旅&quot;&gt;青旅&lt;/h3&gt;
-&lt;p&gt;刚到上海，是8月28，打算9月1再去找短租的公寓，所以就在airbnb上先定了4天的青旅。我觉得我还是要先吐个槽。首先，这个所谓的青旅，本质上就是个多人合住的民宅，远远没有它在airbnb上的照片好看。and then，我进到房间里发现连一个带锁的柜子都没有，问房东大叔肿么肥事，大叔说——“你有什么值钱的东西（可以偷）吗。”，我一时竟无言以对，仔细想想，确实没有，但没有归没有，安全性实在太差。然后，还有一点比较难受，就是房间里不知为何总有一股难闻的气味。&lt;/p&gt;
-
-&lt;p&gt;尽管如此，位于即墨路的这个青旅（民宿）离公司炒鸡近，走路十多分钟就能到，呦呦切克闹，室友也都还聊得来，所以我还是在那住了下来。&lt;/p&gt;
-
-&lt;p&gt;说白了还是因为没钱，这里一天70左右的租金在这个地段绝对是下限了，而且我是一次给了4天的租金，不住的话显然很亏。不过在我发现这里这么不安全的时候我还是想过离开的，但就在这时从厨房飘来了一股很香的烧菜味道，我突然就觉得我也许可以留下来，毕竟会做饭的，都不是坏银！（我饿了）&lt;/p&gt;
-
-&lt;h2 id=&quot;虹口&quot;&gt;虹口&lt;/h2&gt;
-
-&lt;h3 id=&quot;霍山路&quot;&gt;霍山路&lt;/h3&gt;
-&lt;p&gt;9月1号我从浦东新区的即墨路民宿搬到了虹口区的霍山路酒店。酒店的名字有几分优雅，叫索纳特大酒店，其实一点不大，就两层楼，不过外观设计倒还不错。可能是因为这附近在二战时曾是犹太人难民居住的地方，所以建筑的风格都比较西式。不过这里最大的优势是——安静。大部分时候，我喜欢安静。其次这里有一扇大窗户，这个真的真的非常重要，有阳光，有风，人才能打起精神，那种没有外窗的房间，再便宜我也不建议去，压抑。还有就是，附近吃东西的小店较多，价格也远比陆家嘴那边便宜。&lt;/p&gt;
-
-&lt;p&gt;虽然说这里也不是这么的完美。比如离公司稍远，坐地铁加走路需要半个小时（后来发现坐渡轮快些），房间里的空调和马桶不太好用，窗户不带纱窗总会有好光的小昆虫来拜访，室内没有晒衣服的地方（不过可以拿去楼顶的天台晒）。&lt;/p&gt;
-
-&lt;p&gt;总的来说除了价格偏贵（一个月3000多）以外，别的都还蛮不错的。&lt;/p&gt;
-
-&lt;h3 id=&quot;外滩&quot;&gt;外滩&lt;/h3&gt;
-&lt;p&gt;上海滩，在那个风起云涌的时代，是多少人梦的开始以及梦的破灭的地方。我来到上海的第二个夜晚就去了浦东那边的外滩，不过真要说难以忘怀的，定是在9月的某个雨夜，独自走在浦西的外滩上，看对岸灯火璀璨，享受雨后的凉爽。&lt;/p&gt;
-
-&lt;p&gt;如果能遇到神秘的魔法使，定是在这样的夜晚吧。&lt;/p&gt;
-
-&lt;h3 id=&quot;南京路&quot;&gt;南京路&lt;/h3&gt;
-
-&lt;p&gt;我来到上海以后，接连下了好几天的雨，还真是好雨知时节，但是我唯一的一双鞋子就在一天大雨的清晨被雨水浇透了，无可奈何，去南京路买了一双帆布鞋。&lt;/p&gt;
-
-&lt;h2 id=&quot;青浦&quot;&gt;青浦&lt;/h2&gt;
-
-&lt;h3 id=&quot;fes&quot;&gt;FES&lt;/h3&gt;
-&lt;p&gt;这次我来上海，有个展览是必须看的，那就是fes（fate/grand order expo shanghai)，是在上海国家会展中心举办的fgo三周年纪念展。（fgo是一款以强大的骗氪实力为人称道的手游）&lt;/p&gt;
-
-&lt;p&gt;我是8月31去的昼场，来到会展中心的地铁站刚出站就看到了fes的宣传海报和路标，当然，作为一个路痴，我选择跟着其他master一起走。我去到的时候，已经排起了很长的队伍，不过由于管理得当以及场地较大，我很快也就进到了展厅。&lt;/p&gt;
-
-&lt;p&gt;进去的时候，每个人都可以领取一个纪念福袋，这个福袋里包括了活动指南和纪念手环，卡贴，文件夹等小玩意，哦对，还有一份面，要煮的那种2333。&lt;/p&gt;
-
-&lt;p&gt;领完福袋，穿过英灵长廊（和龙娘合了个影），我来到空想树下，咕哒们可以亲身体验暴打空想树的快感（其实就是对着一个测力器来上一拳，然后给你显示这一拳的伤害值），可惜现实中没有贝吉塔（龙珠里的人物），否则一定很有意思。虽然是比较有毒的活动之一，但是排队的人也着实不少，我趁着fes的欧气加持，抽了一下紫色老太氵，没想到居然两次十连就出了，壮哉我大废狗。&lt;/p&gt;
-
-&lt;p&gt;然后去了中华体验馆，看中国传统艺术手法创作的fgo作品，哈，不是很懂欣赏，不过感jio还蛮好看的。然后到处逛了下，就到中午了，买了一个雪糕找了个歇脚的地方慢慢地吃，等grand stage开始（啊啊，吃完雪糕以后把附送的从者插牌也扔掉了，我的saber T-T）。&lt;/p&gt;
-
-&lt;p&gt;虽然说在现场看grand stage是挺有气氛的，看coser们走秀，看欧皇和非球的抽卡决斗，还有大佬们的最大伤害挑战赛，不过因此错过了另外两个大活动——fgo庙会和fgo桌游体验，甚是可惜。以后如果有小伙伴们参加类似的活动，记得要优先攻略只能现场体验的活动，表演啥的回家用手机看回放就好了～对了，好像在fgo庙会遇到了大人物在玩芙芙旋转木马？（怀疑是b站的boss）&lt;/p&gt;
-
-&lt;p&gt;还有就是商品贩卖的时间我也因为看 gs错过了，哎，不过其实也没有什么预算买啦。&lt;/p&gt;
-
-&lt;p&gt;一天的活动下来，总的来说虽然多少有些遗憾的地方，但是也算是不虚此行了，你看，我的那盒fes限量版面条到现在还没吃呢，我就等着啥时候你们都把它吃了，我就放到闲鱼上拍卖！&lt;/p&gt;</content><author><name></name></author><summary type="html">在上海 昔日，胡适写了本书叫“四十自述·在上海”，如今我也来到了上海，虽不敢自比胡适先生，但也不妨写点什么以便他日回忆品味。（其实就是无聊写点东西打发打发时间啦）</summary></entry><entry><title type="html">生成年度数据编码的诡异Bug</title><link href="http://localhost:4000/2019/06/24/%E7%94%9F%E6%88%90%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E7%9A%84%E8%AF%A1%E5%BC%82Bug.html" rel="alternate" type="text/html" title="生成年度数据编码的诡异Bug" /><published>2019-06-24T01:31:22+08:00</published><updated>2019-06-24T01:31:22+08:00</updated><id>http://localhost:4000/2019/06/24/%E7%94%9F%E6%88%90%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E7%9A%84%E8%AF%A1%E5%BC%82Bug</id><content type="html" xml:base="http://localhost:4000/2019/06/24/%E7%94%9F%E6%88%90%E5%B9%B4%E5%BA%A6%E6%95%B0%E6%8D%AE%E7%BC%96%E7%A0%81%E7%9A%84%E8%AF%A1%E5%BC%82Bug.html">&lt;p&gt;问题是酱紫的
-现在有一个如下包含1900-2100这201年间&lt;strong&gt;每天的日期信息字典列表&lt;/strong&gt;:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;[{‘year’: 1901, ‘month’: 1, ‘day’: 1, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 11}, {‘year’: 1901, ‘month’: 1, ‘day’: 2, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 12},………..{‘year’: 2100, ‘month’: 12, ‘day’: 31, ‘lunar_year’: 2100, ‘lunar_leap’: False, ‘lunar_month’: 12, ‘lunar_day’: 1}]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;然后我打算按照如下规则转换成&lt;strong&gt;年度数据编码表&lt;/strong&gt;:&lt;/p&gt;
-
-&lt;p&gt;一年的数据可用20位的二进制数表示&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 0001 1000 1000 1000 1000
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;中间的12位代表当年12个月的天数,0代表29天,1代表30天.&lt;/li&gt;
-    &lt;li&gt;最右边的4位转换成十进制的数表示闰几月.&lt;/li&gt;
-    &lt;li&gt;最左边的4位代表闰月的天数,0001代表30天,0000代表29天.&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我参考的帖子的作者是用pandas进行编码的(不过他没有给出对应的代码),作者得到的结果如下:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;CHINESEYEARCODE = [
-    19416,
-    19168,  42352,  21717,  53856,  55632,  91476,  22176,  39632,
-    21970,  19168,  42422,  42192,  53840, 119381,  46400,  54944,
-    44450,  38320,  84343,  18800,  42160,  46261,  27216,  27968,
-    109396,  11104,  38256,  21234,  18800,  25958,  54432,  59984,
-    92821,  23248,  11104, 100067,  37600, 116951,  51536,  54432,
-    120998,  46416,  22176, 107956,   9680,  37584,  53938,  43344,
-    46423,  27808,  46416,  86869,  19872,  42416,  83315,  21168,
-    43432,  59728,  27296,  44710,  43856,  19296,  43748,  42352,
-    21088,  62051,  55632,  23383,  22176,  38608,  19925,  19152,
-    42192,  54484,  53840,  54616,  46400,  46752, 103846,  38320,
-    18864,  43380,  42160,  45690,  27216,  27968,  44870,  43872,
-    38256,  19189,  18800,  25776,  29859,  59984,  27480,  23232,
-    43872,  38613,  37600,  51552,  55636,  54432,  55888,  30034,
-    22176,  43959,   9680,  37584,  51893,  43344,  46240,  47780,
-    44368,  21977,  19360,  42416,  86390,  21168,  43312,  31060,
-    27296,  44368,  23378,  19296,  42726,  42208,  53856,  60005,
-    54576,  23200,  30371,  38608,  19195,  19152,  42192, 118966,
-    53840,  54560,  56645,  46496,  22224,  21938,  18864,  42359,
-    42160,  43600, 111189,  27936,  44448,  84835,  37744,  18936,
-    18800,  25776,  92326,  59984,  27296, 108228,  43744,  37600,
-    53987,  51552,  54615,  54432,  55888,  23893,  22176,  42704,
-    21972,  21200,  43448,  43344,  46240,  46758,  44368,  21920,
-    43940,  42416,  21168,  45683,  26928,  29495,  27296,  44368,
-    84821,  19296,  42352,  21732,  53600,  59752,  54560,  55968,
-    92838,  22224,  19168,  43476,  41680,  53584,  62034,  54560
-]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;由于没找到合适的pandas教程,我直接用基础的python来编码,结果如下:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;[19168, 42352, 21717, 53856, 55632, 91476, 22176, 39632, 21970, 19168, 42422, 42192, 53840, 119381, 46400, 54944, 44450, 38320, 84343, 18800, 42160, 46261, 27216, 27968, 109396, 11104, 38256, 21234, 18800, 25958, 54432, 59984, 92821, 23248, 11104, 100067, 37600, 116951, 51536, 54432, 120998, 46416, 22176, 107956, 9680, 37584, 53938, 43344, 46423, 27808, 46416, 86869, 19872, 42416, 83315, 21168, 43432, 59728, 27296, 44710, 43856, 19296, 43748, 42352, 21088, 62051, 55632, 23383, 22176, 38608, 19925, 19152, 42192, 54484, 53840, 54616, 46400, 46752, 103846, 38320, 18864, 43380, 42160, 45690, 27216, 27968, 44870, 43872, 38256, 19189, 18800, 25776, 29859, 59984, 27480, 23232, 43872, 38613, 37600, 51552, 55636, 54432, 55888, 30034, 22176, 43959, 9680, 37584, 51893, 43344, 46240, 47780, 44368, 21977, 19360, 42416, 86390, 21168, 43312, 31060, 27296, 44368, 23378, 19296, 42726, 42208, 53856, 60005, 54576, 23200, 30371, 38608, 19195, 19152, 42192, 118966, 53840, 54560, 56645, 46496, 22224, 21938, 18864, 42359, 42160, 43600, 111189, 27936, 44448, 84835, 37744, 18936, 18800, 25776, 92326, 59984, 27308, 108228, 43744, 37600, 53987, 51552, 55127, 54432, 55888, 23893, 22176, 42704, 21972, 21200, 43448, 43344, 46240, 111270, 44368, 21920, 48036, 42416, 21168, 45683, 26928, 29495, 27296, 44368, 84821, 19296, 42352, 21732, 53600, 125032, 54560, 55968, 92838, 22224, 19168, 47572, 41680, 53584]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;除了作者自己加上去的第一个编码以及最后两个由于不好处理暂时被我忽略掉的编码以外,有六个编码我的结果和作者不同，并且经过核对作者是对的,情况如下:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;年份&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;正确编码&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;我的编码&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;差值&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;正确编码二进制&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;错误编码二进制&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;2057&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;27296&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;27308&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;12&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b 110 1010 1010 &lt;strong&gt;0000&lt;/strong&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b 110 1010 1010 &lt;strong&gt;1100&lt;/strong&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;2063&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;54615&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;55127&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;512&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b 1101 01&lt;strong&gt;0&lt;/strong&gt;1 0101 0111&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b 1101 01&lt;strong&gt;1&lt;/strong&gt;1 0101 0111&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;2074&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;46758&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;111270&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;64512&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b 1011 0&lt;strong&gt;1&lt;/strong&gt;10 1010 0110&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b &lt;strong&gt;1&lt;/strong&gt; 1011 0&lt;strong&gt;0&lt;/strong&gt;10 1010 0110&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;2077&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;43940&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;48036&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;4096&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b 101&lt;strong&gt;0&lt;/strong&gt; 1011 1010 0100&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b 101&lt;strong&gt;1&lt;/strong&gt; 1011 1010 0100&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;2090&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;59752&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;125032&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;65280&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b 1110 100&lt;strong&gt;1&lt;/strong&gt; 0110 1000&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b &lt;strong&gt;1&lt;/strong&gt; 1110 100&lt;strong&gt;0&lt;/strong&gt; 0110 1000&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;2096&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;43476&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;47572&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;4096&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b 101&lt;strong&gt;0&lt;/strong&gt; 1001 1101 0100&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;0b 101&lt;strong&gt;1&lt;/strong&gt; 1001 1101 0100&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;这个Bug有点迷~&lt;/p&gt;
-
-&lt;h2 id=&quot;相关链接&quot;&gt;相关链接&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.jianshu.com/p/272c5dfa3eef&quot;&gt;参考文章&lt;/a&gt;
-&lt;a href=&quot;https://gitee.com/kikyoulzg/calendark&quot;&gt;项目地址&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;ps:可以先看看项目的readme的&lt;strong&gt;关于开发&lt;/strong&gt;这段&lt;/p&gt;</content><author><name></name></author><summary type="html">问题是酱紫的 现在有一个如下包含1900-2100这201年间每天的日期信息字典列表: [{‘year’: 1901, ‘month’: 1, ‘day’: 1, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 11}, {‘year’: 1901, ‘month’: 1, ‘day’: 2, ‘lunar_year’: 1900, ‘lunar_month’: 11, ‘lunar_leap’: False, ‘lunar_day’: 12},………..{‘year’: 2100, ‘month’: 12, ‘day’: 31, ‘lunar_year’: 2100, ‘lunar_leap’: False, ‘lunar_month’: 12, ‘lunar_day’: 1}]</summary></entry><entry><title type="html">迟来的满宝</title><link href="http://localhost:4000/2019/03/24/%E8%BF%9F%E6%9D%A5%E7%9A%84%E6%BB%A1%E5%AE%9D.html" rel="alternate" type="text/html" title="迟来的满宝" /><published>2019-03-24T10:17:09+08:00</published><updated>2019-03-24T10:17:09+08:00</updated><id>http://localhost:4000/2019/03/24/%E8%BF%9F%E6%9D%A5%E7%9A%84%E6%BB%A1%E5%AE%9D</id><content type="html" xml:base="http://localhost:4000/2019/03/24/%E8%BF%9F%E6%9D%A5%E7%9A%84%E6%BB%A1%E5%AE%9D.html">&lt;p&gt;咸鱼也有五宝式姐了(｡･ω･｡)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/downloads/siki.jpg&quot; alt=&quot;siki&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">咸鱼也有五宝式姐了(｡･ω･｡)</summary></entry></feed>
+&lt;p&gt;不要放弃希望和爱你的人！&lt;/p&gt;</content><author><name></name></author><summary type="html">前言</summary></entry></feed>
