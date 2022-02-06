@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="kikyoulzg.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="kikyoulzg.github.io/" rel="alternate" type="text/html" /><updated>2022-01-25T14:36:35+08:00</updated><id>kikyoulzg.github.io/feed.xml</id><title type="html">凌子的部落格</title><entry><title type="html">iQoo Neo5 SE和iQoo Neo5横评：Neo5家族双雄</title><link href="kikyoulzg.github.io/2022/01/18/LCD%E5%B1%8F%E5%B9%95%E6%89%8B%E6%9C%BAiQoo-Neo5-SE-%E7%AE%80%E8%AF%84).html" rel="alternate" type="text/html" title="iQoo Neo5 SE和iQoo Neo5横评：Neo5家族双雄" /><published>2022-01-18T15:29:41+08:00</published><updated>2022-01-18T15:29:41+08:00</updated><id>kikyoulzg.github.io/2022/01/18/LCD%E5%B1%8F%E5%B9%95%E6%89%8B%E6%9C%BAiQoo%20Neo5%20SE(%E7%AE%80%E8%AF%84)</id><content type="html" xml:base="kikyoulzg.github.io/2022/01/18/LCD%E5%B1%8F%E5%B9%95%E6%89%8B%E6%9C%BAiQoo-Neo5-SE-%E7%AE%80%E8%AF%84).html">&lt;p&gt;&lt;strong&gt;iQoo在2021年第一季度发布了Neo系列的旗舰手机iQoo Neo5，从销量和用户的评价来看，这都是一款战斗力很高的机型。而它的派生机型，第四季度最后一个月发布的iQoo Neo 5 SE（special edition），在我看来则是Neo5家族中漂亮的收官之作。&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="kikyoulzg.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="kikyoulzg.github.io/" rel="alternate" type="text/html" /><updated>2022-02-06T16:28:55+08:00</updated><id>kikyoulzg.github.io/feed.xml</id><title type="html">凌子的部落格</title><entry><title type="html">开源践行者的枷锁</title><link href="kikyoulzg.github.io/2022/01/31/%E5%BC%80%E6%BA%90%E8%B7%B5%E8%A1%8C%E8%80%85%E7%9A%84%E6%9E%B7%E9%94%81.html" rel="alternate" type="text/html" title="开源践行者的枷锁" /><published>2022-01-31T17:29:20+08:00</published><updated>2022-01-31T17:29:20+08:00</updated><id>kikyoulzg.github.io/2022/01/31/%E5%BC%80%E6%BA%90%E8%B7%B5%E8%A1%8C%E8%80%85%E7%9A%84%E6%9E%B7%E9%94%81</id><content type="html" xml:base="kikyoulzg.github.io/2022/01/31/%E5%BC%80%E6%BA%90%E8%B7%B5%E8%A1%8C%E8%80%85%E7%9A%84%E6%9E%B7%E9%94%81.html">&lt;h2 id=&quot;前沿案例&quot;&gt;前沿案例&lt;/h2&gt;
+&lt;p&gt;2017年6月的一天,软件工程师许雪里被网友告知他的开源软件XXL-JOB被某知名公司申请了国家发明专利,随后他在国家知识产权局的网站上找到了申请号为“CN201610843823.X”的专利，并确认了这个专利的内容和XXL-JOB是一致的。开源软件居然可以被申请国家专利，这在他看来简直就像是天方夜谭。&lt;/p&gt;
+
+&lt;h2 id=&quot;开源是一种自由的信仰不是免费&quot;&gt;开源是一种自由的信仰，不是免费&lt;/h2&gt;
+&lt;p&gt;为什么XXL-JOB的开发者会认为开源软件被申请专利是匪夷所思的事情呢？其实任何一个稍微了解“开源”的人都会有类似的感受。&lt;/p&gt;
+
+&lt;p&gt;主流的观点认为我们今天说的开源运动是脱胎于美国20世纪中叶以后的黑客文酝酿出的自由软件运动。其倡导软件的开发者向公众开放他们的源代码，并确保任何人都可以合法地复制、分发和修改这些源代码。也就是说开源软件对其用户来说是自由的，你不必为获得或使用它而向任何人付费。当然，如果作者为此提供了额外的服务（比如为开源软件的商业版增加的功能和服务），你要为额外的商业服务付费那是合情合理的。&lt;/p&gt;
+
+&lt;h2 id=&quot;可耻的摘桃贼&quot;&gt;可耻的“摘桃贼”&lt;/h2&gt;
+&lt;p&gt;但是，如果有人拿着一个开源软件（包括原本开源的部分和修改后的部分）去申请专利，并且通过的话，那么，根据专利法，专利权人享有对这个“开源软件”的专有权。如此一来，其他人如果未经授权对这个“开源软件”复制、分发和修改都是违法的。&lt;/p&gt;
+
+&lt;p&gt;这种摘桃子的行为，无论在国内还是国外都并不罕见，被摘桃子的开源软件开发者往往没有精力维权，也难以接受高昂的诉讼费。就像许雪里的案例，在开源社区的帮助下他向国家知识产权局提起了申诉，但是我们在知识产权局的网站上可以看到这个专利申请在2017年6月23日就进入实质审查阶段，而直到2021年5月14日才被驳回，尽管从结果来看是正义得以伸张，但是这中间历经4年，期间作者与开源社区付出了多少精力我们恐怕难以想象。而且，这个XXL-JOB的软件在github（知名代码托管平台）上可是多达2W+的点赞（star）和8k+复刻（fork）的高人气项目，如果是一般的项目，恐怕更难维权了。&lt;/p&gt;
+
+&lt;h2 id=&quot;开源践行者的先锋&quot;&gt;开源践行者的先锋&lt;/h2&gt;
+&lt;p&gt;开源事业要发展，一定离不开它背后那些为之冲锋陷阵的斗士。&lt;/p&gt;
+
+&lt;p&gt;国外的话，比较出名的组织是FSF（自由软件基金会）、OSI（开放源代码促进会），比较为人熟知的个人则有Richard Matthew Stallman（理查德·马修·斯托曼）、Eric Steven Raymond（埃里克·史蒂文·雷蒙德）。&lt;/p&gt;
+
+&lt;p&gt;国内在开源这方面起步较晚，这方面的组织和知名人士较少，但是随着IT行业的迅猛发展和开源软件在各个领域的影响力与日俱增，也有不少企业和爱好者投身其中。比较出名的社区有开源中国、linux中国。&lt;/p&gt;
+
+&lt;h2 id=&quot;开源践行者的枷锁&quot;&gt;开源践行者的枷锁&lt;/h2&gt;
+&lt;p&gt;很多事情，光是说说，可能很容易，但是真要做点什么的时候，就不是这么回事了。我们能看到国内很多开源软件的作者完全是利用自己的业余时间来维护项目的。因为开源软件往往无法为他们带来合理的回报，所以他们为了养活自己和家人，只能给企业工作。我认为开源软件开发者不是不切实际的理想主义者，而是兴趣使然的爱好者、忠于技术的极客，最重要的，是平凡的践行者。&lt;/p&gt;
+
+&lt;h2 id=&quot;解开枷锁的钥匙&quot;&gt;解开枷锁的钥匙&lt;/h2&gt;
+&lt;p&gt;无论是上文提到的XXL-JOB事件，还是轰动开源界的wine ARM实现被中国公司申请专利的事件，无疑都是对开源软件开发者和开源社区的极大伤害。这种伤害是不是没有办法预防？有没有办法对那些“窃取”开源果实的企业予以反击？从我对好些案例的观察来看，是可以的，前提是你的开源软件要采用适当的“开源许可协议”。&lt;/p&gt;
+
+&lt;p&gt;开源许可协议实质是权利人将其复制权、发行权、修改权等附条件地许可给不特定公众的著作权许可使用合同。比较著名的协议有Mozilla公共许可协议、GPL许可协议和BSD许可协议等。如果你不知到自己应该选择哪种开源协议，假如你使用码云这个托管平台，当你创建一个项目的时候，它有一个很棒的工具协助你选择合适的开源协议。&lt;/p&gt;
+
+&lt;p&gt;但是，这些国外的开源协议，在我国的司法实践中是否有效呢？&lt;/p&gt;
+
+&lt;p&gt;其实近些年，我国的司法实践中也有好些涉及开源许可协议的案件，其中比较为人知晓的是数字天堂和两柚子的计算机软件著作权纠纷案，感兴趣的朋友可以了解一下。&lt;/p&gt;
+
+&lt;h2 id=&quot;结语&quot;&gt;结语&lt;/h2&gt;
+&lt;p&gt;但愿自由与正义得以伸张！但愿努力的人天天加鸡腿！&lt;/p&gt;</content><author><name></name></author><summary type="html">前沿案例 2017年6月的一天,软件工程师许雪里被网友告知他的开源软件XXL-JOB被某知名公司申请了国家发明专利,随后他在国家知识产权局的网站上找到了申请号为“CN201610843823.X”的专利，并确认了这个专利的内容和XXL-JOB是一致的。开源软件居然可以被申请国家专利，这在他看来简直就像是天方夜谭。</summary></entry><entry><title type="html">iQoo Neo5 SE和iQoo Neo5横评：Neo5家族双雄</title><link href="kikyoulzg.github.io/2022/01/18/LCD%E5%B1%8F%E5%B9%95%E6%89%8B%E6%9C%BAiQoo-Neo5-SE-%E7%AE%80%E8%AF%84).html" rel="alternate" type="text/html" title="iQoo Neo5 SE和iQoo Neo5横评：Neo5家族双雄" /><published>2022-01-18T15:29:41+08:00</published><updated>2022-01-18T15:29:41+08:00</updated><id>kikyoulzg.github.io/2022/01/18/LCD%E5%B1%8F%E5%B9%95%E6%89%8B%E6%9C%BAiQoo%20Neo5%20SE(%E7%AE%80%E8%AF%84)</id><content type="html" xml:base="kikyoulzg.github.io/2022/01/18/LCD%E5%B1%8F%E5%B9%95%E6%89%8B%E6%9C%BAiQoo-Neo5-SE-%E7%AE%80%E8%AF%84).html">&lt;p&gt;&lt;strong&gt;iQoo在2021年第一季度发布了Neo系列的旗舰手机iQoo Neo5，从销量和用户的评价来看，这都是一款战斗力很高的机型。而它的派生机型，第四季度最后一个月发布的iQoo Neo 5 SE（special edition），在我看来则是Neo5家族中漂亮的收官之作。&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;iqoo-neo5-se-和-iqoo-neo5-参数对比8256版&quot;&gt;iQoo Neo5 SE 和 iQoo Neo5 参数对比(8+256版)&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/downloads/参数.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
@@ -354,52 +387,4 @@ export GTK_IM_MODULE=fcitx
 
 &lt;p&gt;最后不得不感叹一下，2020年的就业真是太难了T-T&lt;/p&gt;
 
-&lt;p&gt;其实呢，还是自己太菜。&lt;/p&gt;</content><author><name></name></author><summary type="html">其实标题改成整理档案心得也是可以的，因为我的职责就是给风管的老师们整理档案。</summary></entry><entry><title type="html">意义不明之代码</title><link href="kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81.html" rel="alternate" type="text/html" title="意义不明之代码" /><published>2020-03-10T22:58:17+08:00</published><updated>2020-03-10T22:58:17+08:00</updated><id>kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81</id><content type="html" xml:base="kikyoulzg.github.io/2020/03/10/%E6%84%8F%E4%B9%89%E4%B8%8D%E6%98%8E%E4%B9%8B%E4%BB%A3%E7%A0%81.html">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#include &amp;lt;stdio.h&amp;gt;
-
-void swap(char *a,char *b){
-
-char *c =a;
-
-a = b;
-
-b = c;
-
-}
-
-void wo(char *list,int k,int m){
-
-if (k&amp;gt;m){
-
-for(k = 0;k&amp;lt;=m;k++){
-
-    printf(&quot;%c&quot;,list[k]);
-}
-printf(&quot;\n&quot;);
-}
-
-else{
-
-for(int i=k;i&amp;lt;=m;i++){
-
-swap(&amp;amp;list[i],&amp;amp;list[k]);
-
-wo(list, k+1, m);
-
-swap(&amp;amp;list[i],&amp;amp;list[k]);
-
-break;
-
-}
-
-}
-
-  }
-
-void main(){
-
-char list[]= {'s', 'u', 'a', 'n', 'q', 'q', 'o', 'r', 'z'};
-
-wo(list, 0, 3);
-
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">``` #include</summary></entry></feed>
+&lt;p&gt;其实呢，还是自己太菜。&lt;/p&gt;</content><author><name></name></author><summary type="html">其实标题改成整理档案心得也是可以的，因为我的职责就是给风管的老师们整理档案。</summary></entry></feed>
