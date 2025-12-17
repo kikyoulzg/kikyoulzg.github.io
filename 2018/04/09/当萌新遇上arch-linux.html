@@ -2,20 +2,22 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>当萌新遇上arch linux | 凌子的部落格</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="当萌新遇上arch linux" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="kikyoulzg.github.io/2018/04/09/%E5%BD%93%E8%90%8C%E6%96%B0%E9%81%87%E4%B8%8Aarch-linux.html" />
-<meta property="og:url" content="kikyoulzg.github.io/2018/04/09/%E5%BD%93%E8%90%8C%E6%96%B0%E9%81%87%E4%B8%8Aarch-linux.html" />
+<link rel="canonical" href="http://localhost:4000/2018/04/09/%E5%BD%93%E8%90%8C%E6%96%B0%E9%81%87%E4%B8%8Aarch-linux.html" />
+<meta property="og:url" content="http://localhost:4000/2018/04/09/%E5%BD%93%E8%90%8C%E6%96%B0%E9%81%87%E4%B8%8Aarch-linux.html" />
 <meta property="og:site_name" content="凌子的部落格" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-04-09T00:31:23+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="当萌新遇上arch linux" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"当萌新遇上arch linux","dateModified":"2018-04-09T00:31:23+08:00","datePublished":"2018-04-09T00:31:23+08:00","url":"kikyoulzg.github.io/2018/04/09/%E5%BD%93%E8%90%8C%E6%96%B0%E9%81%87%E4%B8%8Aarch-linux.html","mainEntityOfPage":{"@type":"WebPage","@id":"kikyoulzg.github.io/2018/04/09/%E5%BD%93%E8%90%8C%E6%96%B0%E9%81%87%E4%B8%8Aarch-linux.html"},"@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2018-04-09T00:31:23+08:00","datePublished":"2018-04-09T00:31:23+08:00","headline":"当萌新遇上arch linux","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/04/09/%E5%BD%93%E8%90%8C%E6%96%B0%E9%81%87%E4%B8%8Aarch-linux.html"},"url":"http://localhost:4000/2018/04/09/%E5%BD%93%E8%90%8C%E6%96%B0%E9%81%87%E4%B8%8Aarch-linux.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="kikyoulzg.github.io/feed.xml" title="凌子的部落格" /></head>
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="凌子的部落格" /></head>
 <body>    <header class="site-header">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">凌子的部落格</a><nav class="site-nav">
@@ -62,125 +64,125 @@ Q：果然是萌新（</p>
 ##萌新安装arch的实况
 前两个一样的〉安装（完了，没有图形界面，不能点点点了，咋整啊）
 ##arch的基本系统安装
-连接网络:<code class="highlighter-rouge">dhcpcd</code>有线或<code class="highlighter-rouge">wifi-menu</code>无线</p>
+连接网络:<code class="language-plaintext highlighter-rouge">dhcpcd</code>有线或<code class="language-plaintext highlighter-rouge">wifi-menu</code>无线</p>
 
 <p>更新系统时间:
-<code class="highlighter-rouge">timedatectl set-ntp true</code></p>
+<code class="language-plaintext highlighter-rouge">timedatectl set-ntp true</code></p>
 
 <p>划分分区:
-<code class="highlighter-rouge">fdisk  /dev/sdx</code>x一般是a</p>
+<code class="language-plaintext highlighter-rouge">fdisk  /dev/sdx</code>x一般是a</p>
 
 <p>创建文件系统:
-<code class="highlighter-rouge">mkfs.ext4  /dev/sdx</code></p>
+<code class="language-plaintext highlighter-rouge">mkfs.ext4  /dev/sdx</code></p>
 
 <p>挂载:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mount /dev/sdx /mnt  
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mount /dev/sdx /mnt  
 mkdir /mnt/boot 
 mount /dev/sdy(efi分区)  /mnt/boot
 </code></pre></div></div>
 
 <p>修改软件源:
-<code class="highlighter-rouge">vim  /etc/pacman.d/mirrorlist</code> 
+<code class="language-plaintext highlighter-rouge">vim  /etc/pacman.d/mirrorlist</code> 
 把快的源去掉#放到文件顶部</p>
 
 <p>安装基本包:
-<code class="highlighter-rouge">pacstrap /mnt base base-devel</code></p>
+<code class="language-plaintext highlighter-rouge">pacstrap /mnt base base-devel</code></p>
 
 <p>配置fstab:
-<code class="highlighter-rouge">genfstab -L /mnt &gt;&gt; /mnt/etc/fstab </code>
+<code class="language-plaintext highlighter-rouge">genfstab -L /mnt &gt;&gt; /mnt/etc/fstab </code>
  chroot:
-<code class="highlighter-rouge">arch-chroot /mnt</code></p>
+<code class="language-plaintext highlighter-rouge">arch-chroot /mnt</code></p>
 
 <p>设置时区:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 hwclock --systohc
 </code></pre></div></div>
 <p>提前安装的软件:
-<code class="highlighter-rouge">pacman -S vim dialog wpa_supplicant ntfs-3g networkmanager</code></p>
+<code class="language-plaintext highlighter-rouge">pacman -S vim dialog wpa_supplicant ntfs-3g networkmanager</code></p>
 
 <p>本地化:
-<code class="highlighter-rouge">vim /etc/locale.gen</code>
+<code class="language-plaintext highlighter-rouge">vim /etc/locale.gen</code>
 在文件中找到zh_CN.UTF-8 UTF-8 zh_HK.UTF-8 UTF-8 zh_TW.UTF-8 UTF-8 en_US.UTF-8 UTF-8这四行，去掉行首的#号，保存并退出。</p>
 
 <p>执行
-<code class="highlighter-rouge">loacle-gen</code>
-<code class="highlighter-rouge">vim /etc/locale.conf</code>
+<code class="language-plaintext highlighter-rouge">loacle-gen</code>
+<code class="language-plaintext highlighter-rouge">vim /etc/locale.conf</code>
 在文件的第一行加入以下内容：LANG=en_US.UTF-8`</p>
 
 <p>设置主机名:
-<code class="highlighter-rouge">vim /etc/hostname</code>
+<code class="language-plaintext highlighter-rouge">vim /etc/hostname</code>
 在文件的第一行输入你自己设定的一个myhostname,保存并退出。
-<code class="highlighter-rouge">vim /etc/hosts</code>
+<code class="language-plaintext highlighter-rouge">vim /etc/hosts</code>
 加入以下代码</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.0.1	localhost.localdomain	localhost
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>127.0.0.1	localhost.localdomain	localhost
 ::1		localhost.localdomain	localhost
 127.0.1.1	myhostname.localdomain	myhostname
 </code></pre></div></div>
 
 <p>设置Root密码:
-<code class="highlighter-rouge">passwd</code></p>
+<code class="language-plaintext highlighter-rouge">passwd</code></p>
 
 <p>安装Intel-ucode（非IntelCPU可以跳过此步骤）:
-<code class="highlighter-rouge">pacman -S intel-ucode</code></p>
+<code class="language-plaintext highlighter-rouge">pacman -S intel-ucode</code></p>
 
 <p>安装Bootloader:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pacman -S os-prober 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> pacman -S os-prober 
  pacman -S grub efibootmgr 
  grub-install --target=x86_64-efi --efi- directory=/boot --bootloader-id=grub 
  grub-mkconfig -o /boot/grub/grub.cfg 
 </code></pre></div></div>
 <p>如果发现grub.cfg没有arch的启动项，执行以下命令并再次生成grub.cfg
-<code class="highlighter-rouge">pacman -S linux</code></p>
+<code class="language-plaintext highlighter-rouge">pacman -S linux</code></p>
 
 <p>重启:
-<code class="highlighter-rouge">exit,reboot</code></p>
+<code class="language-plaintext highlighter-rouge">exit,reboot</code></p>
 
 <p>你拥有了一个字符界面的基本系统
 ##arch安装桌面环境（以DDE为例）
 记得先连接网络。
 创建交换空间：
-<code class="highlighter-rouge">fallocate -l 512M /swapfile </code>
+<code class="language-plaintext highlighter-rouge">fallocate -l 512M /swapfile </code>
 请将512M换成需要的大小，只能以M或G为单位
 修改权限
-<code class="highlighter-rouge">chmod 600 /swapfile</code>
+<code class="language-plaintext highlighter-rouge">chmod 600 /swapfile</code>
 设置交换文件，执行
-<code class="highlighter-rouge">mkswap /swapfile</code>
+<code class="language-plaintext highlighter-rouge">mkswap /swapfile</code>
 启用交换文件，执行
-<code class="highlighter-rouge">swapon /swapfile</code>
+<code class="language-plaintext highlighter-rouge">swapon /swapfile</code>
 最后我们需要编辑/etc/fstab为交换文件设置一个入口，使用vim打开文件：
-<code class="highlighter-rouge">vim /etc/fstab</code>
+<code class="language-plaintext highlighter-rouge">vim /etc/fstab</code>
 注意编辑fstab文件的时候要格外注意不要修改之前的内容，直接在最后新起一行加入以下内容：
-<code class="highlighter-rouge">/swapfile none swap defaults 0 0</code></p>
+<code class="language-plaintext highlighter-rouge">/swapfile none swap defaults 0 0</code></p>
 
 <p>新建用户：
-<code class="highlighter-rouge">useradd -m-Gwheel username</code>（请自行替换username为你的用户名）
-<code class="highlighter-rouge">passwd username</code>（请自行替换username为你的用户名）</p>
+<code class="language-plaintext highlighter-rouge">useradd -m-Gwheel username</code>（请自行替换username为你的用户名）
+<code class="language-plaintext highlighter-rouge">passwd username</code>（请自行替换username为你的用户名）</p>
 
 <p>配置sudo：
-<code class="highlighter-rouge">sudo pacman -S something</code>
-<code class="highlighter-rouge">pacman -S sudo</code>
-<code class="highlighter-rouge">visudo</code>
+<code class="language-plaintext highlighter-rouge">sudo pacman -S something</code>
+<code class="language-plaintext highlighter-rouge">pacman -S sudo</code>
+<code class="language-plaintext highlighter-rouge">visudo</code>
 找到# %wheel ALL=(ALL)ALL，去掉#
 重启一下。</p>
 
 <p>安装xorg：
-<code class="highlighter-rouge">sudo pacman -S xorg</code></p>
+<code class="language-plaintext highlighter-rouge">sudo pacman -S xorg</code></p>
 
 <p>安装图形环境：
-<code class="highlighter-rouge">sudo pacman -S deepin deepin-extra</code>
-<code class="highlighter-rouge">sudo pacman -S lightdm</code>
-<code class="highlighter-rouge">vim /etc/lightdm/lightdm.conf</code>
+<code class="language-plaintext highlighter-rouge">sudo pacman -S deepin deepin-extra</code>
+<code class="language-plaintext highlighter-rouge">sudo pacman -S lightdm</code>
+<code class="language-plaintext highlighter-rouge">vim /etc/lightdm/lightdm.conf</code>
 修改</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Seat:*]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Seat:*]
 ...
 greeter-session=lightdm-deepin-greeter
 </code></pre></div></div>
-<p><code class="highlighter-rouge">sudo systemctl enable lightdm</code></p>
+<p><code class="language-plaintext highlighter-rouge">sudo systemctl enable lightdm</code></p>
 
 <p>提前配置网络：
-<code class="highlighter-rouge">sudo systemctl disable netctl</code>
-<code class="highlighter-rouge">sudo systemctl enable NetworkManager </code>注意大小写
-<code class="highlighter-rouge">sudo pacman -S network-manager-applet</code></p>
+<code class="language-plaintext highlighter-rouge">sudo systemctl disable netctl</code>
+<code class="language-plaintext highlighter-rouge">sudo systemctl enable NetworkManager </code>注意大小写
+<code class="language-plaintext highlighter-rouge">sudo pacman -S network-manager-applet</code></p>
 
 <p>这样，重启一下，就可以看到图形界面了！
 然后安装字体和中文输入法就可以开始你的表演了，哇咔咔(´∀｀*)</p>
@@ -194,16 +196,16 @@ greeter-session=lightdm-deepin-greeter
 <h3 id="解决问题">解决问题</h3>
 <p>1、chroot前要把efi分区挂到/mnt/boot，如果电脑里原本有win的话一般已经带有这个分区，如果没有就创建它
 2、先执行以下命令过去一些有用的信息并放到文件里以备使用。
-<code class="highlighter-rouge">sudo grub-probe --target=fs_uuid /boot/EFI/EFI/Microsoft/Boot/bootmgfw.efi &gt;&gt; /root/fs_uuid</code></p>
+<code class="language-plaintext highlighter-rouge">sudo grub-probe --target=fs_uuid /boot/EFI/EFI/Microsoft/Boot/bootmgfw.efi &gt;&gt; /root/fs_uuid</code></p>
 
-<p><code class="highlighter-rouge">sudo grub-probe --target=hints_string /boot/EFI/EFI/Microsoft/Boot/bbootmgfw.efi &gt;&gt; /root/hints_string</code>
+<p><code class="language-plaintext highlighter-rouge">sudo grub-probe --target=hints_string /boot/EFI/EFI/Microsoft/Boot/bbootmgfw.efi &gt;&gt; /root/hints_string</code>
 然后编辑/boot/grub/grub.cfg，找到</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> BEGIN /etc/grub.d/10_linux 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> BEGIN /etc/grub.d/10_linux 
 ...
 END /etc/grub.d/10_linux 
 </code></pre></div></div>
 <p>在他们之间加上下面一段</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>menuentry "Microsoft Windows 10 x86_64 UEFI-GPT" {  
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>menuentry "Microsoft Windows 10 x86_64 UEFI-GPT" {  
     insmod part_gpt  
     insmod fat  
     insmod search_fs_uuid  
@@ -215,7 +217,7 @@ END /etc/grub.d/10_linux
 <p>3、下载安装等宽中文字体
 4、把时区调到上海
 5、编辑.xprofile增加fcitx前端的环境变量如下</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export XMODIFIERS=@im=fcitx
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export XMODIFIERS=@im=fcitx
 export QT_IM_MODULE=fcitx
 export GTK_IM_MODULE=fcitx
 </code></pre></div></div>
